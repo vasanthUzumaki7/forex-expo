@@ -1,0 +1,113 @@
+.nine{
+
+    background: url(https://theforexexpo.com/wp-content/uploads/2024/09/Event-Companion-Bg.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.nineth-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 70px 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+ .download-btn{
+    width: 150px;
+    margin: 20px 10px;
+}
+.btn-{
+    transform: translateX(70px);
+    width: max-content;
+    font-size: 20px !important;
+}
+
+.nine .nineth-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.nine .nineth-img-container{
+   width: 600px;
+}
+.nine .nineth-content-container{
+    width: 600px;
+}
+.nineth-content-container h1{
+    font-size: 44px;
+   color:white;
+   margin-bottom: 10px;
+   font-weight: normal;
+   font-family:"Avenir" !important;
+}
+.nineth-content-container p{
+    font-size: 20px !important;
+    color: white;
+    margin: 10px 0px;
+    font-weight: normal;
+}
+.nineth-content-container li{
+    font-size: 20px ;
+    font-weight: normal;
+    color: white;
+    font-family: "Avenir";
+}
+
+@media screen and (max-width:992px) {
+    
+    .nineth-container{
+        flex-wrap: wrap;
+        padding: 50px 50px;
+    }
+    .nine .nineth-img-container{
+        width: 100%;
+     }
+     .nine .nineth-content-container{
+         width: 100%;
+     }
+
+     
+}
+
+@media screen and (max-width:700px){
+    .nine .nineth-img-container{
+        width: 70%;
+     }
+     .nine .nineth-img-container{
+        width: 70%;
+     }
+
+     .nineth-content-container h1{
+        font-size: 44px;
+    }
+    .nineth-content-container p{
+        font-size: 20px;
+    }
+    .nineth-content-container li{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    .nineth-content-container h1{
+        font-size: 34px;
+    }
+    .download-btn {
+        width: 125px;
+        margin: 0px 5px;
+    }
+    .nineth-content-container p {
+        font-size: 15px !important;
+    }
+    .nineth-content-container li {
+        font-size: 15px;
+    }
+    .nineth-container{
+        padding: 50px 20px;
+    }
+}

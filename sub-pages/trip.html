@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../style9.css">
+    <link rel="stylesheet" href="./sub-css/event.css">
+    <link rel="stylesheet" href="../style12.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../myslick.css">
+
+    <link rel="stylesheet" href="../style11.css">
+    <link rel="stylesheet" href="../absolute.css">
+
+    <link rel="stylesheet" href="./sub-css/tripstyle1.css">
+    <link rel="stylesheet" href="./sub-css/tripstyle2.css
+    ">
+    <link rel="stylesheet" href="./sub-css/tripstyle3.css">
+    <link rel="stylesheet" href="./sub-css//tripstyle4.css">
+
+    <link href="https://fonts.cdnfonts.com/css/big-john" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <style>
+        .Event-banner img {
+
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .Event-banner {
+            width: 100%;
+            height: 100%;
+            height: 60vh;
+            position: relative;
+        }
+
+        .Event-banner .e-banner {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .Event-banner .e-b-layer {
+            z-index: 3;
+            object-fit: cover;
+            height: 100%;
+        }
+
+
+
+        .Event-banner h1 {
+            color: white;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            font-weight: bold;
+            z-index: 4;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .animl {
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .animr {
+            transform: translateX(30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .anime {
+            transform: translateX(0);
+            opacity: 1;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="absolute-container" style="z-index: 5;">
+        <div class="app-icon" style="z-index: 5;">
+            <div>
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/09/Buy-Tickets.png" alt="">
+                Register Now
+            </div>
+
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Whatsapp.png" alt="">
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Telegram.png" alt="">
+
+            <a href="javascript:void(0)" onclick="scrollToTop()" class="scroll1" id="scroll"><button><i
+                        class="fa-solid fa-arrow-up"></i></button></a>
+        </div>
+        <div class="absolute-buttons" style="z-index: 5;">
+            <h1>Event Completed</h1>
+            <div>
+                <button>Become Sponcer</button>
+                <button style="background-color: rgb(230, 0, 50);color: white;">Ready to visit</button>
+                <button>Event App</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-clock">
+        <p><span style="color: brown;">Address :</span> Hall 1, 2, 3, Dubai World Trade Centre, UAE</p>
+        <p><span style="color: brown;">Date & Time :</span> 7 - 8 October 10:00AM - 6:00PM</p>
+        <ul>
+            <li><span class="fab fa-facebook-f"></span></li>
+            <li><span class="fab fa-instagram"></span></li>
+            <li><span class="fa-brands fa-x-twitter"></span></li>
+            <li><span class="fab fa-linkedin"></span></li>
+        </ul>
+    </div>
+
+    <header class="heading" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+            </div>
+            <nav id="navigation" class="navigation">
+
+                <div class="mobile-view">
+                    <a href=""><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+                </div>
+
+                <ul class="unlist" id="unlist">
+                    <li> <a href="../index.html">Home</a></li>
+                    <li class="menu1"> <a href="#">Visit</a>
+                        <ul class="list1">
+                            <li><a href="./Register.html">Register Now</a></li>
+                            <li><a href="./Event.html">Event App</a></li>
+                            <li><a href="./media.html">Media Partners</a></li>
+                            <li><a href="./trip.html">Plan Your Trip</a></li>
+                            <li><a href="./venue.html">Venue</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Exibit</a>
+                        <ul class="list2">
+                            <li><a href="./sponcers24.html">Sponsers 2024</a></li>
+                            <li><a href="./stand.html">Book Your Stand</a></li>
+                            <li><a href="./opportunity.html">Branding Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Agenda</a>
+                        <ul class="list2">
+                            <li><a href="./myagenda.html">Agenda</a></li>
+                            <li><a href="./speaker.html">Speaker 2024</a></li>
+                            <li><a href="./becomespeaker.html">Become Speaker</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="./sponcers24.html">Sponcer</a></li>
+                    <li> <a href="#">Floorplan</a></li>
+                    <li> <button class="btn-1">Become Sponcer</button></li>
+                    <li> <button class="btn-2">Register to Visit</button></li>
+
+                </ul>
+            </nav>
+            <div class="ovrl"></div>
+            <div class="toggle" id="toggle">
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <!-- <div class="togL"></div>
+                <div class="togR"></div> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="Event-banner">
+        <img class="e-b-layer" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/bg-2.png" alt="">
+        <img class="e-banner" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/05/04-2-1440x394.jpg"
+            alt="">
+        <h1>PLAN YOUR TRIP</h1>
+    </div>
+
+    <div class="tr1-container">
+        <div class="tr1-cc">
+            <div class="tr1">
+                <h1>Fly With Emirates</h1>
+                <div>
+                    <h3>The <span>Official Airline Partner</span></h3>
+                    <h3>Of Forex Expo Dubai 2024!</h3>
+                </div>
+                <div>
+                    <h3 class="tr1-h3" style="background-color: var(--blue);">Travel Validity:<span>Oct 02, 2024 to Oct
+                            13,
+                            2024</span></h3>
+                    <h3 class="tr1-h3"><span>PROMO CODE: EVE6FRX</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tr2-container">
+        <h1>Plan Your Trip</h1>
+        <p>The Forex Expo Dubai 2024 will be held at the iconic Dubai World Trade Centre, located in the vibrant heart
+            of Dubai. This premier venue provides an exceptional space for global forex leaders, traders, and innovators
+            to gather, network, and explore emerging trends and opportunities in the Online Trading industry. Dubai's
+            reputation as a hub for luxury, business, and innovation makes it the perfect destination for this
+            international event. Experience the finest hospitality with access to top-tier hotels, resorts, and spas,
+            all conveniently located near the venue. The Dubai World Trade Centre is easily accessible from Dubai
+            International Airport and Al Maktoum International Airport, ensuring a smooth and comfortable journey for
+            all attendees.</p>
+    </div>
+    <!-- tr3 -->
+    <div class="tr3ovrdiv"
+        style="display: flex;justify-content: center;align-items: center;background-color: rgb(233, 233, 240);flex-direction: column;">
+        <div class="tr3-container">
+            <div class="arrow-con">
+                <div class="ar-card">
+                    <div class="ar-c">
+                        <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Flight.png" alt="">
+                        <div>
+                            <p>Select <br> "Book a flight"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ar-arrow1">
+                    <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Small-line.png" alt="">
+                </div>
+
+                <div class="ar-card">
+                    <div class="ar-c">
+                        <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Search.png" alt="">
+                        <div>
+                            <p>Click <br> "Advanced Search"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ar-arrow1">
+                    <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Small-line.png" alt="">
+                </div>
+
+                <div class="ar-card">
+                    <div class="ar-c">
+                        <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Destination.png" alt="">
+                        <div>
+                            <p>Enter your Destination And Travel Dates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="arrow-con-m">
+
+                <div class="ar-arrow12">
+                    <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Small-line.png" alt="">
+                </div>
+
+                <div class="arrow-c-o">
+                    <div>
+                    </div>
+                    <div>
+                        <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Big-line.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="arrow-con">
+                <div class="ar-card">
+                    <div class="ar-c">
+                        <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Promotion.png" alt="">
+                        <div>
+                            <p>Type in Your Promotional Code EVE6FRX
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ar-arrow1">
+                    <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Small-line.png" alt="">
+                </div>
+
+                <div class="ar-card">
+                    <div class="ar-c">
+                        <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Flight.png" alt="">
+                        <div>
+                            <p>Pay online or at your nearest Emirates office</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="mybtn-2" style="padding: 0 10px; width: auto;border: 1px solid rgb(230, 0, 50);">Book Your Flight
+            Now</button>
+    </div>
+
+    <div class="tr3-para">
+        <p>
+            Join us at the Forex Expo Dubai 2024 and enjoy a seamless travel experience with
+            Emirates. Don’t miss this opportunity to be part of the largest forex event of the year in one of the
+            world’s
+            most dynamic cities. We look forward to welcoming you to Dubai!</p>
+    </div>
+
+    <div class="tr4-container">
+        <div class="tr4cc">
+            <h1>Visa Assistance</h1>
+            <p>Need a visa? Start your application process by clicking the button below. Ensure you complete your
+                application well before the event date</p>
+            <div class="tr4-btn"><button class="mybtn-2">Apply For Visa</button></div>
+        </div>
+    </div>
+    <div class="tr4-container" style="background: var(--dblue);">
+        <div class="tr4cc">
+            <h1>Accommodation</h1>
+            <p>Dubai's stunning skyline sets it apart from other major global cities, with many famous tourist
+                attractions
+                lining its landscape. We have selected the following hotels that offer exclusive delegate rates at
+                attractive prices while being near the Forex Expo Dubai 2024 venue.</p>
+        </div>
+    </div>
+
+
+
+    <div class="tr5-container">
+        <div class="tr5-content">
+            <div class="tr5-top">
+                <div class="tr5-top-l tr5-r-line">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                        <h2>Event</h2>
+                        <p>Oct 07 - 08, 2024</p>
+                    </div>
+                </div>
+                <div class="tr5-top-l">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                        <h2>Booking</h2>
+                        <p>Oct 05 - 11, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Novotel World Trade Centre Dubai</h1>
+            <p>Novotel world Trade Centre Dubai offers modern comfort and excellent amenities, perfectn for both
+                business and leisure travelers. Located close to the expo venue, it ensures a stylish and convenient
+                stay.</p>
+            <p>
+                Book your stay at Novotel, World Trade Centre Dubai and get exclusive discount</p>
+
+            <div>
+                <button class="mybtn-1">Terms & Conditions</button>
+                <button class="mybtn-2">Book here</button>
+            </div>
+        </div>
+    </div>
+    <div class="tr5-container"
+        style=" background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ) ,url(https://theforexexpo.com/wp-content/uploads/2024/07/IBIS.jpeg);background-repeat: no-repeat;background-size: cover;">
+        <div class="tr5-content">
+            <div class="tr5-top">
+                <div class="tr5-top-l tr5-r-line">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                        <h2>Event</h2>
+                        <p>Oct 07 - 08, 2024</p>
+                    </div>
+                </div>
+                <div class="tr5-top-l">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                        <h2>Booking</h2>
+                        <p>Oct 05 - 11, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <h1>IBIS World Trade Center Dubai</h1>
+            <p>IBIS World Trade Center Dubai offers a convenient and comfortable stay right next to the expo venue. With
+                modern amenities and easy access to key locations, it ensures a hassle-free experience.</p>
+            <p>Book your stay at Ibis One, World Trade Centre Dubai and get exclusive discount</p>
+
+            <div>
+                <button class="mybtn-1">Terms & Conditions</button>
+                <button class="mybtn-2">Book here</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tr5-container">
+        <div class="tr5-content">
+            <div class="tr5-top">
+                <div class="tr5-top-l tr5-r-line">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                        <h2>Event</h2>
+                        <p>Oct 07 - 08, 2024</p>
+                    </div>
+                </div>
+                <div class="tr5-top-l">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div>
+                        <h2>Booking</h2>
+                        <p>Oct 05 - 11, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <h1>IBIS One Central Dubai</h1>
+            <p>IBIS One Central Dubai combines affordability with comfort. Ideal for budget-conscious travelers, it
+                provides easy access to the expo venue and essential amenities for a pleasant stay.</p>
+            <p>Book your stay at Ibis One Central and get exclusive discount</p>
+
+            <div>
+                <button class="mybtn-1">Terms & Conditions</button>
+                <button class="mybtn-2">Book here</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tr4-container" style=" background: white;padding-top: 100px;">
+        <div class="tr4cc">
+            <h1 style="color: var(--grey);font-size: var(--xl);font-family: Avenir !important ;">Other Perks in The Area
+            </h1>
+            <p style="color: var(--grey);">Dubai is a vibrant metropolis known for its stunning skyline, bustling
+                business
+                district, iconic landmarks like the Burj Khalifa, and a plethora of entertainment and culinary options.
+                Whether you're visiting for business or pleasure, there is never a dull moment in this dynamic city.
+            </p>
+        </div>
+    </div>
+    <div class="tr4-container" style=" background: white;padding-top: 30px;">
+        <div class="tr4cc">
+            <h1 style="color: var(--grey);font-size: var(--xl);">Best Things to do in Dubai</h1>
+            <p style="color: var(--grey);">Dubai is a vibrant metropolis known for its stunning skyline, bustling
+                business
+                district, iconic landmarks like the Burj Khalifa, and a plethora of entertainment and culinary options.
+                Whether you're visiting for business or pleasure, there is never a dull moment in this dynamic city.</p>
+        </div>
+    </div>
+
+    <div class="tr6-co">
+        <div class="tr6-container">
+            <div class="tr6-card">
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Burj-Khalifa.png" alt="">
+                <h3>BURJ KHALIFA</h3>
+                <div>
+                    <div>
+                        <p>Tallest building in the world/ Offers breathtaking views of the city from its observation
+                            decks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tr6-card">
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Dubai-Mall.png" alt="">
+                <h3>DUBAI MALL</h3>
+                <div>
+                    <div>
+                        <p>One of the largest shopping malls globally/ Features an indoor aquarium, ice rink, and
+                            countless shopping and dining options</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tr6-card">
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Dubai-Marina.png" alt="">
+                <h3>DUBAI MARINA</h3>
+                <div>
+                    <div>
+                        <p>Modern area with luxury yachts, high-end restaurants, and stunning waterfront views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tr6-card">
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Burj-Khalifa.png" alt="">
+                <h3>PALM JUMEIRAH</h3>
+                <div>
+                    <div>
+                        <p>Iconic man-made Island/ Home to luxurious hotels, resorts, and pristine beaches</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tr6-card">
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/07/Dubai-Mall.png" alt="">
+                <h3>DUBAI FOUNTAIN</h3>
+                <div>
+                    <div>
+                        <p>World's largest choreographed fountain system/ Located at the base of Burj Khalifa, offering
+                            spectacular water shows</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tr7-box">
+    <div class="tr7-container">
+        <h1>Travel Tips</h1>
+        <ul>
+            <li>The rates are per room per night, inclusive of a 10% service charge, 5% VAT, and 7% municipality fee.
+            </li>
+            <li>Stay informed about the latest travel regulations in Dubai.</li>
+            <li>Check your government’s website for up-to-date information.</li>
+            <li>Consider using a travel agent or concierge service to help navigate regulations and arrange travel.</li>
+            <li>Verify visa requirements for your trip and apply in advance if necessary.</li>
+            <li>Make copies of your passport, visa, and tickets in case of unexpected situations.</li>
+        </ul>
+        <h1>Weather</h1>
+        <div class="tr7-bottom">
+            <div class="tr7-bottom1">
+                <i class="fas fa-cloud-sun"></i>
+                <h2>30<sup>o</sup>C</h2>
+                <p style="text-align: center;">Mostly Sunny and Dry</p>
+            </div>
+            <div class="tr7-bottom2">
+                <p>October is a transitional month in Dubai, marking the end of summer and the beginning of cooler
+                    weather. Expect warm days and cooler evenings, with a low chance of rain.</p>
+                <h2>Packaging Tips</h2>
+                <p>Bring light clothing for the day and a jacket for the evenings. Check the forecast before your trip
+                    to be prepared.
+                </p>
+                <p>Enjoy Dubai!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="thirteen">
+        <div class="th-top">
+            <div class="thirteen-container">
+                <div class="th-top-left">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/Footer-Site-Logo.png"
+                        alt="">
+                    <p style="font-weight: bold;">Address</p>
+                    <h3>HUAN QIAO EVENT MANAGEMENT L.L.C</h3>
+                    <p>901, City Tower 2, Sheikh Zayed Road, Dubai, United Arab Emirates.
+                    </p>
+                </div>
+                <div class="th-top-right">
+                    <h2>ORGANIZED BY</h2>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                </div>
+            </div>
+        </div>
+        <div class="th-bottom">
+            <div class="thb-container">
+                <div class="th-footer">
+                    <h4>© 2024 Forex Expo. All rights reserved</h4>
+                    <ul>
+                        <li>
+                            <p>Terms and Conditions</p>
+                        </li>
+                        <li>
+                            <p>Privacy Policy</p>
+                        </li>
+                    </ul>
+                </div>
+                <p>Disclaimer: Forex Expo Dubai 2024 is an educational event designed to provide information on
+                    financial
+                    products and services. The views and opinions expressed by speakers, sponsors, exhibitors, and
+                    attendees
+                    are their own and do not necessarily reflect the views and opinions of the Forex Expo Dubai 2024
+                    organizers. The information provided at this event is for educational purposes only and should not
+                    be
+                    considered financial, legal, or investment advice. Attendees should always consult with a financial
+                    advisor before making any financial decisions. The organizers of Forex Expo Dubai 2024 will not be
+                    held
+                    responsible for any financial loss or damage that may result from the use of information provided at
+                    this event.</p>
+            </div>
+        </div>
+    </div>
+
+    <Script>
+        let toggle = document.getElementById("toggle");
+        let navigation = document.querySelector(".navigation")
+        let ovrl = document.querySelector(".ovrl");
+        toggle.addEventListener("click", () => {
+            navigation.classList.toggle("slider");
+            ovrl.classList.toggle("overlay");
+
+        })
+        window.onscroll = function () {
+            var header = document.getElementById
+                ('header');
+            let scroll = document.getElementById('scroll');
+            if (window.scrollY > 50) {
+                // Add background color when scrolled
+                header.classList.add('scrolled');
+                header.classList.remove('transparent');
+
+                scroll.classList.add('scroll2');
+                scroll.classList.remove('scroll1');
+            } else {
+                // Remove background color when at the top
+                header.classList.remove('scrolled');
+                header.classList.add('transparent');
+                scroll.classList.add('scroll1');
+                scroll.classList.remove('scroll2');
+            }
+        };
+        // Absolute scroll
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </Script>
+
+    <script>
+
+
+        // Left scolling animation
+        // Create an IntersectionObserver to trigger animations
+        const observerL = new IntersectionObserver((entries, observerL) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add fade-in class when the content is in view
+                    entry.target.classList.add('anime');
+                    // Stop observing after animation
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of the element is in view
+        });
+
+        // Select all sections with scroll-content class and observe them
+        const scrollContentsL = document.querySelectorAll('.animl');
+        scrollContentsL.forEach(content => {
+            observerL.observe(content); // Start observing each section
+
+        });
+
+        // Right scolling animation
+        // Create an IntersectionObserver to trigger animations
+        const observerR = new IntersectionObserver((entries, observerR) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add fade-in class when the content is in view
+                    entry.target.classList.add('anime');
+                    // Stop observing after animation
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of the element is in view
+        });
+
+        // Select all sections with scroll-content class and observe them
+        const scrollContentsR = document.querySelectorAll('.animr');
+        scrollContentsR.forEach(content => {
+            observerR.observe(content); // Start observing each section
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+.tenth .tenth-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.tenth-head h1{
+    font-size: 50px;
+    color: rgb(35, 35, 124);
+    font-weight: bolder;
+}
+.tenth-head .select-core div{
+    height: 10px;
+    width: 50px;
+    background-color: grey;
+    float: left;
+    border-radius: 10px;
+   margin-top: 27px;
+   margin-left: 10px;
+}
+
+
+.sticky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky .sticker-container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    height: 290px;
+    overflow-y: scroll;
+    scrollbar-width: 5px;
+    align-items: center;
+    padding: 30px 10px;
+    perspective: 1000px; /* Allows 3D flipping effect */
+}   
+.sticker-container::-webkit-scrollbar-thumb{
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #f1f1f1; /* Adds space around the thumb */
+}
+.sticker-container::-webkit-scrollbar-track{
+    background: #f1f1f1; /* Background of the track */
+}
+.sticker-container::-webkit-scrollbar{
+    width: 12px; /* Width of the entire scrollbar */
+}
+
+.sticker-container .sticker{
+    height: 140px;
+    width: 140px;
+    position: relative;
+    border-radius: 10px;
+    transform-style: preserve-3d; /* Maintain 3D space */
+    transition: transform 0.6s; /* Smooth transition */
+}
+.sticker .sticker-back,
+.sticker .sticker-front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.sticker-front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.sticker-back{
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+.sticker:hover {
+    transform: rotateY(180deg); /* Flip the card on hover */
+    transition: transform 0.3s;
+}
+.sticker .sticker-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(50, 50, 146);
+}
+.sticker-back button{
+    background-color: rgb(182, 69, 69);
+    color: white;
+    border: none;
+    border-radius:5px 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.sticker-back p{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.sticky .select-btn{
+    background: transparent;
+    font-size: 80px;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.sticky .select-btn:hover{
+ color: rgba(0, 0, 0, 0.993);   
+}
+
+.tenth .tenth-btn{
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 10px;
+}
+
+.tenth .select-core2 div{
+    height: 10px;
+    background-color: grey;
+    width: 50px;
+    border-radius: 10px;
+}
+.select-core2{
+    display: flex;
+    gap: 5px;
+    visibility: hidden;
+}
+.tenth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:992px) {
+    .select-core2{
+        visibility: visible;
+    }
+    .tenth-head .select-core{
+       display: none;
+    }
+    .tenth .tenth-head {
+        justify-content: center;
+    }
+}
+

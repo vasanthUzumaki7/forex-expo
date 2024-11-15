@@ -1,0 +1,89 @@
+.venue-left div i{
+    font-size: 30px;
+    color: rgb(61, 32, 150);
+}
+.venue-left{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+}
+.venue-left div{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 30px 0px;
+}
+.venue-left div h3{
+    font-weight: lighter;
+    color: gray;
+    font-family: "Avenir" !important;
+}
+.venue-left div p{
+    color: var(--smokewhite);
+}
+.venue-right{
+    height: 500px;
+    width: 100%;
+}
+.venue1-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 10px;
+}
+.venue1-co {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.venue-img{
+    width: 100%;
+}
+.venue-img img{
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:992px) {
+
+    .venue-left{
+        flex-direction: row;
+        height: max-content;
+        width: auto;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 50px 0px;
+    }
+    .venue-left div{
+        gap: 5px;
+        padding: 40px 10px;
+    }
+    .venue-right{
+        max-height: 300px;
+        height: 100%;
+    }
+    .venue-right iframe{
+        height: 300px;
+    }
+}
+@media screen and (max-width:552px){
+    .venue1-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .venue1-co{
+        padding: 10px ;
+    }
+}

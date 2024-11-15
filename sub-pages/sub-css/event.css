@@ -1,0 +1,121 @@
+:root{
+    --blue: rgb(39, 38, 97);
+    --dblue:rgb(16, 16, 56);
+    --red:rgb(230, 0, 50);
+    --grey:rgb(56, 56, 56);
+    --ogrey:rgba(56, 56, 56, 0.8);
+    --smokewhite:rgb(137, 138, 156);
+    --pink:rgb(133, 15, 66);
+    --liblue:rgb(21, 30, 82);
+    --small:20px;
+    --extrasmall:14px;
+    --big:25px;
+    --medium:35px;
+    --xl:43px; 
+    --xxl:55px;
+    --xxxl:77px;
+    --weight:700;
+    --extraweight:900;
+}
+
+
+.Event-card-container .ev-right .ev-card{
+    display: flex;
+    align-items: center;
+    height: 180px;
+    width: 280px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    gap: 20px;
+    flex-grow: 1;
+    border-radius: 10px;
+    background:linear-gradient(to right, rgb(125, 15, 66),rgb(26, 29, 82));
+}
+.ev-right .ev-card img{
+    height: 80px;
+    width: 65px;
+}
+.ev-card p{
+    flex: 1;
+    color: white;
+    font-weight: bold;
+    font-size: var(--small) !important;
+}
+.Event-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.Event-cc{
+    background-color: var(--blue);
+}
+.ev-right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+.Event-card-container .ev-left{
+    width:40%;
+    box-sizing: border-box;
+    padding: 30px;
+
+}
+.ev-left h1{
+    font-size: var(--xl);
+    font-weight: var(--weight);
+    color: white;
+    font-family: "Avenir" !important;
+}
+.ev-left p{
+    color: white;
+    font-size: var(--small);
+    margin-top: 20px;
+    box-sizing: border-box;
+    line-height: 20px;
+    font-size: 20px !important;
+}
+@media screen and (max-width:1024px) {
+    .Event-card-container .ev-right .ev-card{
+        width: 250px;
+        flex-grow: 0;
+    }
+}
+@media screen and (max-width:992px) {
+    .Event-card-container .ev-right .ev-card{
+        flex-grow: 1;
+    }
+    .ev-right{
+        width: 100%;
+    }
+    .Event-card-container .ev-left{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+
+    .ev-left h1{
+        font-size: var(--big);
+        font-weight: var(--weight);
+        color: white;
+    }
+    .ev-left p{
+        color: white;
+        font-size: var(--extrasmall);
+        margin-top: 20px;
+        box-sizing: border-box;
+        line-height: 20px;
+    }
+    .ev-card p{
+        font-size: var(--extrasmall);
+    }
+    .nineth-content-container h1{
+        font-size: 27px !important;
+    }
+}

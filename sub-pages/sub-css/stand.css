@@ -1,0 +1,230 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.stand-form form label {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: "Avenir";
+}
+
+.stand-form form label .required {
+    color: red;
+    font-size: 14px;
+    position: relative;
+    top: -0.4em;
+    left: 2px;
+}
+.stand-form form textarea{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: -webkit-fill-available;
+}
+
+.stand-form form input {
+
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.stand-form form input.ip-line-red {
+    border-color: rgb(139, 45, 45) !important;
+}
+.stand-form form .error-message {
+    visibility: hidden;
+    color: red;
+    font-size: 12px;
+}
+
+.country-drp-down {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 11px;
+}
+
+.country-drp-down div {
+    width: 105px;
+    height:35px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer; /* Added cursor for dropdown */
+    padding: 0px 7px;
+    margin-right: 5px; /* Add space between selector and input */
+}
+
+.country-drp-down ul {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    z-index:1;
+    max-height: 300px; /* Set max height */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    padding-left: 0;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    top: 100%; /* Position below the dropdown */
+    display: none; /* Hidden by default */
+}
+.country-drp-down span{
+    position: absolute;
+    bottom:-16px;
+    left: 0px;
+}
+.country-drp-down div p{
+    overflow: hidden;
+    width: 50px;
+    height: 20px;
+}
+
+.country-drp-down ul.show {
+    display: block; /* Show when toggled */
+    list-style-type: none;
+}
+
+.country-drp-down ul li {
+    width: 100%;
+    padding: 5px 5px;
+    list-style-type: none;
+    cursor: pointer; /* Change cursor to pointer for list items */
+}
+
+.country-drp-down ul li:hover {
+    background-color: black;
+    color: white;
+}
+.stand-form .form-container{
+    width: 50%;
+}
+ .caution-txt{
+    font-size: 10px;
+    margin: 3px 0px;
+}
+.stand-form form select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.stand-form form select option{
+    background-color: white !important;
+    color: black !important;
+}
+.stand-form form select option:hover{
+    color: white !important;
+    background-color: black !important;
+}
+.stand-form .policy-box{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(26, 115, 232);
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px black;
+    margin: 10px 0px;
+    
+}
+.stand-form button{
+    background-color: rgb(255, 122, 89);
+    color: white;
+    border-radius: 5px;
+    padding: 7px 15px;
+    border: none;
+    margin: 15px 0px;
+}
+.policy-box p:nth-child(1){
+    font-size: 13px;
+    margin: 0px 3px 0px 0px;
+    color: white;
+}
+.policy-box p:nth-child(2){
+    font-size: 10px;
+    color: white;
+}
+.policy-box div{
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    right: 0;
+    top: 0;
+}
+.policy-box div img{
+    width: 100%;
+    height: 100%;
+}
+.stand-form form .frm-wrap{
+    display: flex;
+    gap: 20px;
+}
+.stand-form{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 100px;
+
+}
+.stand-form form{
+    border: 2px solid rgb(6, 6, 44);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+}
+.stand-form h1{
+    color: rgb(6, 6, 89);
+    font-size: var(--xl);
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:992px) {
+    .stand-form .form-container{
+        width: 100%;
+
+    }
+
+    .stand-form form .frm-wrap{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .stand-form h1{
+        font-size: var(--medium);
+    }
+}
+@media screen and (max-width:552px) {
+    .stand-form form {
+        padding: 10px;
+    }
+    .stand-form form label{
+        margin-top: 2px;
+    }
+    .stand-form{
+        padding: 20px;
+    }
+    .stand-form h1{
+        font-size: var(--big);
+    }
+}
+

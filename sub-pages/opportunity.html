@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../style9.css">
+    <link rel="stylesheet" href="./sub-css/event.css">
+    <link rel="stylesheet" href="../style12.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../myslick.css">
+    <link rel="stylesheet" href="../sub-pages/sub-css/oppurtunity.css">
+    <link rel="stylesheet" href="../absolute.css">
+    <link rel="stylesheet" href="../style11.css">
+
+    <link href="https://fonts.cdnfonts.com/css/big-john" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <style>
+        .Event-banner img {
+
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .Event-banner {
+            width: 100%;
+            height: 100%;
+            height: 50vh;
+            position: relative;
+        }
+
+        .Event-banner .e-banner {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .Event-banner .e-b-layer {
+            z-index: 3;
+            object-fit: cover;
+            height: 100%;
+        }
+
+
+        .Event-banner h1 {
+            color: white;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            font-weight: bold;
+            z-index: 4;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            font-size: 36px;
+        }
+
+        .animl {
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .anime {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="absolute-container" style="z-index: 5;">
+        <div class="app-icon" style="z-index: 5;">
+            <div>
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/09/Buy-Tickets.png" alt="">
+                Register Now
+            </div>
+
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Whatsapp.png" alt="">
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Telegram.png" alt="">
+
+            <a href="javascript:void(0)" onclick="scrollToTop()" class="scroll1" id="scroll"><button><i
+                        class="fa-solid fa-arrow-up"></i></button></a>
+        </div>
+        <div class="absolute-buttons" style="z-index: 5;">
+            <h1>Event Completed</h1>
+            <div>
+                <button>Become Sponcer</button>
+                <button style="background-color: rgb(230, 0, 50);color: white;">Ready to visit</button>
+                <button>Event App</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-clock">
+        <p><span style="color: brown;">Address :</span> Hall 1, 2, 3, Dubai World Trade Centre, UAE</p>
+        <p><span style="color: brown;">Date & Time :</span> 7 - 8 October 10:00AM - 6:00PM</p>
+        <ul>
+            <li><span class="fab fa-facebook-f"></span></li>
+            <li><span class="fab fa-instagram"></span></li>
+            <li><span class="fa-brands fa-x-twitter"></span></li>
+            <li><span class="fab fa-linkedin"></span></li>
+        </ul>
+    </div>
+
+    <header class="heading" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+            </div>
+            <nav id="navigation" class="navigation">
+
+                <div class="mobile-view">
+                    <a href=""><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+                </div>
+
+                <ul class="unlist" id="unlist">
+                    <li> <a href="../index.html">Home</a></li>
+                    <li class="menu1"> <a href="#">Visit</a>
+                        <ul class="list1">
+                            <li><a href="./Register.html">Register Now</a></li>
+                            <li><a href="./Event.html">Event App</a></li>
+                            <li><a href="./media.html">Media Partners</a></li>
+                            <li><a href="./trip.html">Plan Your Trip</a></li>
+                            <li><a href="./venue.html">Venue</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Exibit</a>
+                        <ul class="list2">
+                            <li><a href="./sponcers24.html">Sponsers 2024</a></li>
+                            <li><a href="./stand.html">Book Your Stand</a></li>
+                            <li><a href="./opportunity.html">Branding Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Agenda</a>
+                        <ul class="list2">
+                            <li><a href="./myagenda.html">Agenda</a></li>
+                            <li><a href="./speaker.html">Speaker 2024</a></li>
+                            <li><a href="./becomespeaker.html">Become Speaker</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="./sponcers24.html">Sponcer</a></li>
+                    <li> <a href="#">Floorplan</a></li>
+                    <li> <button class="btn-1">Become Sponcer</button></li>
+                    <li> <button class="btn-2">Register to Visit</button></li>
+
+                </ul>
+            </nav>
+            <div class="ovrl"></div>
+            <div class="toggle" id="toggle">
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <!-- <div class="togL"></div>
+                <div class="togR"></div> -->
+            </div>
+        </div>
+    </header>
+    <div class="Event-banner">
+        <img class="e-b-layer" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/bg-2.png" alt="">
+        <img class="e-banner" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/05/04-2-1440x394.jpg"
+            alt="">
+        <h1>BRANDING OPPORTUNITIES</h1>
+    </div>
+
+
+    <p class="op-des">Enhance your brand's reach through premium advertising sponsorship at Forex Expo Dubai. Secure prime ad placements and maximize your visibility to the Targeted audience. Stand out and connect with the global Forex community through bespoke advertising opportunities.</p>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Welcome Bag</h3>
+                <p>Delegate bags will be placed in a stand at the venue entrance and conference hall entrance to ensure
+                    maximum visibility of the brand</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Welcome-Bag.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Aqua Sponsor</h3>
+                <p>4 Branded water kiosks will be placed across the venue that will give a great deal of exposure during
+                    the expo.</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Aqua-sponsor.png" alt=""></div>
+        </div>
+    </div>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Welcome Bag</h3>
+                <p>Registration counter staffs will be wearing branded t-shirts that will provide great coverage and brand awareness during the expo</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Welcome-team.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Cofee Bar</h3>
+                <p>Fully branded coffee bar with limited passes to have meetings and discussions with potential clients over a cup of hot coffee</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Coffee-bar.png" alt=""></div>
+        </div>
+    </div>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Pen and Notebook</h3>
+                <p>Pen and notebook will be placed on all the chairs inside the conference hall prior to the start of the conference that will give excellent visibility to a niche audience (Materials to be provided by the sponsors and should be delivered 1 week prior to the expo)</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Notebook.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Conference Hall Flyer</h3>
+                <p>Placed on each chair in the conference hall prior to the start of the session that will benefit in increasing the brand awareness. (Materials to be provided by the sponsors and should be delivered 1 week prior to the expo)</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Conference-hall-flyer.png" alt=""></div>
+        </div>
+    </div>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Registration Area Tower Boxes</h3>
+                <p>Positioned in the foyer areas of the concourse, thi dynamic eye catching network of four columns is sure to be noticed by the entire audience in the venue</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Registration-area-tower.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Aqua Sponsor</h3>
+                <p>This remarkable high visibility panel offers exceptional value and ROI to advertisers</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Double-sided.png" alt=""></div>
+        </div>
+    </div>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Foyer Area Branding</h3>
+                <p>Very exclusive branding opportunity at the hall entrance, visible for all the visitors entering to the hall. Large branding size on the walls of each sides of the foyer area</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Foyer-area-branding.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Glass Entrane(Metro Side)</h3>
+                <p>Maximize your impact by placing your brand at one of DICEC’s most visible location. Situated at the main Exhibition Gate Entrance, this is a signature site that targets all incoming visitors, directing them to your stand</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Glass-entrance.png" alt=""></div>
+        </div>
+    </div>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Corner Branding</h3>
+                <p>A two sided display strategically positioned at the lobby of the Exhibition Center to guarantee exceptional domination & reach</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Corner-branding.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Grid Banners above Hall</h3>
+                <p>This exclusive network of sites are situated in the concourse area, right on top of halls entrances. Targeted directly at visitors entering the halls, these sites provide a "supersite" location in the heart of the Exhibition center</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Grid-banners.png" alt=""></div>
+        </div>
+    </div>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Banner near the Main Entrance</h3>
+                <p>Placed at the entrance of the exhibition center for high visibility, these are the perfect site for advertisers aiming to deliver mass reach messages</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Banner-main-entrance.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Tower Box at Concource</h3>
+                <p>Reach New Peaks, Ignite Your Brand, Sponsors logo or content will be printed on the tower box to have standalone visibility to the targetted audience</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Tower-box.png" alt=""></div>
+        </div>
+    </div>
+    <div class="op-box">
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Exhibition Gate Entrance Arch (Metro Entrance)</h3>
+                <p>First Impressions Matter: Archway Sponsorship for Lasting Impact, the sponsor's logo, and a tagline will be visible to all the attendees of the exhibition.</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Exhibition-gate-entrance.png" alt=""></div>
+        </div>
+
+        <div class="op-card animl">
+            <div class="op-c-left">
+                <h3>Entrance Video Wall</h3>
+                <p>Very exclusive branding opportunity at the hall entrance, visible for all the visitors entering to the hall</p>
+                <a>Get it now<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="op-c-right"><img
+                    src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Entrance-video-wall.png" alt=""></div>
+        </div>
+    </div>
+    <div class="qta-btn">
+        <button>Get Quotation</button>
+    </div>
+
+    <div class="thirteen">
+        <div class="th-top">
+            <div class="thirteen-container">
+                <div class="th-top-left">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/Footer-Site-Logo.png"
+                        alt="">
+                    <p style="font-weight: bold;">Address</p>
+                    <h3>HUAN QIAO EVENT MANAGEMENT L.L.C</h3>
+                    <p>901, City Tower 2, Sheikh Zayed Road, Dubai, United Arab Emirates.
+                    </p>
+                </div>
+                <div class="th-top-right">
+                    <h2>ORGANIZED BY</h2>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                </div>
+            </div>
+        </div>
+        <div class="th-bottom">
+            <div class="thb-container">
+                <div class="th-footer">
+                    <h4>© 2024 Forex Expo. All rights reserved</h4>
+                    <ul>
+                        <li>
+                            <p>Terms and Conditions</p>
+                        </li>
+                        <li>
+                            <p>Privacy Policy</p>
+                        </li>
+                    </ul>
+                </div>
+                <p>Disclaimer: Forex Expo Dubai 2024 is an educational event designed to provide information on
+                    financial
+                    products and services. The views and opinions expressed by speakers, sponsors, exhibitors, and
+                    attendees
+                    are their own and do not necessarily reflect the views and opinions of the Forex Expo Dubai 2024
+                    organizers. The information provided at this event is for educational purposes only and should not
+                    be
+                    considered financial, legal, or investment advice. Attendees should always consult with a financial
+                    advisor before making any financial decisions. The organizers of Forex Expo Dubai 2024 will not be
+                    held
+                    responsible for any financial loss or damage that may result from the use of information provided at
+                    this event.</p>
+            </div>
+        </div>
+    </div>
+    <Script>
+        let toggle = document.getElementById("toggle");
+        let navigation = document.querySelector(".navigation")
+        let ovrl = document.querySelector(".ovrl");
+        toggle.addEventListener("click", () => {
+            navigation.classList.toggle("slider");
+            ovrl.classList.toggle("overlay");
+
+        })
+        window.onscroll = function () {
+            var header = document.getElementById
+                ('header');
+            let scroll = document.getElementById('scroll');
+            if (window.scrollY > 50) {
+                // Add background color when scrolled
+                header.classList.add('scrolled');
+                header.classList.remove('transparent');
+
+                scroll.classList.add('scroll2');
+                scroll.classList.remove('scroll1');
+            } else {
+                // Remove background color when at the top
+                header.classList.remove('scrolled');
+                header.classList.add('transparent');
+                scroll.classList.add('scroll1');
+                scroll.classList.remove('scroll2');
+            }
+        };
+        // Absolute scroll
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </Script>
+
+    <script>
+        const observerL = new IntersectionObserver((entries, observerL) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add a delay based on the element's index
+                    entry.target.style.transitionDelay = `${index * 0.4}s`; // Adjust delay time as needed
+                    entry.target.classList.add('anime');
+                    observerL.unobserve(entry.target); // Stop observing after animation
+                }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of the element is in view
+        });
+
+        // Select all elements with animl class and observe them
+        const scrollContentsL = document.querySelectorAll('.animl');
+        scrollContentsL.forEach(content => {
+            observerL.observe(content);
+        });
+
+    </script>
+
+
+</body>
+
+</html>

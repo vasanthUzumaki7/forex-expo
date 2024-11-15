@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../style9.css">
+    <link rel="stylesheet" href="./sub-css/event.css">
+    <link rel="stylesheet" href="../style12.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../myslick.css">
+    <link rel="stylesheet" href="../style5.css">
+    <link rel="stylesheet" href="./sub-css/stand.css">
+    <link rel="stylesheet" href="../style11.css">
+    <link rel="stylesheet" href="../absolute.css">
+
+    <link href="https://fonts.cdnfonts.com/css/big-john" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <style>
+        .Event-banner img {
+
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .Event-banner {
+            width: 100%;
+            height: 100%;
+            height: 50vh;
+            position: relative;
+        }
+
+        .Event-banner .e-banner {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .Event-banner .e-b-layer {
+            z-index: 3;
+            object-fit: cover;
+            height: 100%;
+        }
+
+      
+
+        .Event-banner h1 {
+            color: white;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            font-weight: bold;
+            font-size: var(--medium);
+            z-index: 4;
+            width: 80%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .animl {
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .animr {
+            transform: translateX(30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .anime {
+            transform: translateX(0);
+            opacity: 1;
+            transition: 1s;
+        }
+
+        .fifth-content-container button {
+            width: 150px;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 992px) {
+            .fifth-content-container button {
+                width: 150px;
+                margin-top: 10px;
+            }
+            .Event-banner h1{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="absolute-container" style="z-index: 5;">
+        <div class="app-icon" style="z-index: 5;">
+            <div>
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/09/Buy-Tickets.png" alt="">
+                Register Now
+            </div>
+
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Whatsapp.png" alt="">
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Telegram.png" alt="">
+
+            <a href="javascript:void(0)" onclick="scrollToTop()" class="scroll1" id="scroll"><button><i
+                        class="fa-solid fa-arrow-up"></i></button></a>
+        </div>
+        <div class="absolute-buttons" style="z-index: 5;">
+            <h1>Event Completed</h1>
+            <div>
+                <button>Become Sponcer</button>
+                <button style="background-color: rgb(230, 0, 50);color: white;">Ready to visit</button>
+                <button>Event App</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-clock">
+        <p><span style="color: brown;">Address :</span> Hall 1, 2, 3, Dubai World Trade Centre, UAE</p>
+        <p><span style="color: brown;">Date & Time :</span> 7 - 8 October 10:00AM - 6:00PM</p>
+        <ul>
+            <li><span class="fab fa-facebook-f"></span></li>
+            <li><span class="fab fa-instagram"></span></li>
+            <li><span class="fa-brands fa-x-twitter"></span></li>
+            <li><span class="fab fa-linkedin"></span></li>
+        </ul>
+    </div>
+
+    <header class="heading" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+            </div>
+            <nav id="navigation" class="navigation">
+
+                <div class="mobile-view">
+                    <a href=""><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+                </div>
+
+                <ul class="unlist" id="unlist">
+                    <li> <a href="../index.html">Home</a></li>
+                    <li class="menu1"> <a href="#">Visit</a>
+                        <ul class="list1">
+                            <li><a href="./Register.html">Register Now</a></li>
+                            <li><a href="./Event.html">Event App</a></li>
+                            <li><a href="./media.html">Media Partners</a></li>
+                            <li><a href="./trip.html">Plan Your Trip</a></li>
+                            <li><a href="./venue.html">Venue</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Exibit</a>
+                        <ul class="list2">
+                            <li><a href="./sponcers24.html">Sponsers 2024</a></li>
+                            <li><a href="./stand.html">Book Your Stand</a></li>
+                            <li><a href="./opportunity.html">Branding Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Agenda</a>
+                        <ul class="list2">
+                            <li><a href="./myagenda.html">Agenda</a></li>
+                            <li><a href="./speaker.html">Speaker 2024</a></li>
+                            <li><a href="./becomespeaker.html">Become Speaker</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="./sponcers24.html">Sponcer</a></li>
+                    <li> <a href="#">Floorplan</a></li>
+                    <li> <button class="btn-1">Become Sponcer</button></li>
+                    <li> <button class="btn-2">Register to Visit</button></li>
+
+                </ul>
+            </nav>
+            <div class="ovrl"></div>
+            <div class="toggle" id="toggle">
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <!-- <div class="togL"></div>
+                <div class="togR"></div> -->
+            </div>
+        </div>
+    </header>
+
+
+    <div class="Event-banner">
+        <img class="e-b-layer" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/bg-2.png" alt="">
+        <img class="e-banner" src="https://theforexexpo.com/wp-content/uploads/2024/04/bg-1-2-1440x394.jpg" alt="">
+        <h1>BECOME SPONCER</h1>
+    </div>
+
+    <div class="fifth">
+        <div class="fifth-img-container">
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/04/left-img-1.png" alt="">
+        </div>
+        <div class="fifth-content-container">
+            <h1>Why to Exibit</h1>
+            <p>Connect with a diverse community comprising over 1200 Financial Brokers, 5000 Investors, 6000 Traders,
+                3000 IBs, and Affiliates, alongside 300+ B2B & Technology Providers, renowned for their premium.
+            </p>
+            <li><i class="fas fa-angle-right"></i> Stand a chance to win appreciation awards, celebrating your success.
+            </li>
+            <li><i class="fas fa-angle-right"></i> Reach and engage with a broad spectrum of potential clients and
+                investors from various corners of the world.</li>
+            <li><i class="fas fa-angle-right"></i> Network and explore collaborations with industry leaders and
+                innovators.</li>
+            <p><button>Become Sponcer</button></p>
+        </div>
+
+    </div>
+
+    <div class="stand-form">
+        <h1>BECOME A SPONCER</h1>
+        <form id="sponsorForm">
+            <div class="frm-wrap">
+            <div class="form-container">
+                <label for="firstname">First Name<sub class="required">*</sub></label>
+                <input type="text" id="firstname" placeholder="JOHN" required>
+                <span class="error-message">Please complete this field</span>
+
+                <label for="lastname">Last Name<sub class="required">*</sub></label>
+                <input type="text" id="lastname" placeholder="DOE" required>
+                <span class="error-message">Please complete this field</span>
+
+                <label for="companyname">Company Name<sub class="required">*</sub></label>
+                <input type="text" id="companyname" placeholder="COMPANY NAME" required>
+                <span class="error-message">Please complete this field</span>
+            </div>
+            <div class="form-container">
+                <label for="jobtitle">Job Title<sub class="required">*</sub></label>
+                <input type="text" id="jobtitle" placeholder="JOB TITLE" required>
+                <span class="error-message">Please complete this field</span>
+
+                <label for="email">Bussiness Email Address<sub class="required">*</sub></label>
+                <input type="text" id="email" placeholder="EMAIL" required>
+                <span class="error-message">Please complete this field</span>
+
+                <div>
+                    <label for="phonenumber">Phone Number<sub class="required">*</sub></label>
+                    <p class="caution-txt">Phone number should contain a minimum of 7 digits and only include numbers</p>
+                    <div class="country-drp-down">
+                        <div id="country-selector">
+                            <p class="drp-down-select">Select Country</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <input type="text" id="phonenumber" placeholder="PHONE NUMBER" required>
+                        <span class="error-message">Please complete this field</span>
+                        <ul class="country-list-container">
+                            <li value="+91">India (+91)</li>
+                            <li value="+1">United States (+1)</li>
+                            <li value="+44">United Kingdom (+44)</li>
+                            <li value="+61">Australia (+61)</li>
+                            <!-- Add more countries as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <label for="country/region">Country/Region<sub class="required">*</sub></label>
+                <input type="text" id="country/region" placeholder="INDIA" required>
+                <span class="error-message">Please complete this field</span>
+
+                <label for="industry">Industry<sub class="required">*</sub></label>
+                <select>
+                    <option value="">Select</option>
+                    <option value="Forex Broker">Forex Broker</option>
+                    <option value="Crypto Broker">Crypto Broker</option>
+                </select>
+
+                <label for="companyname">Message(Optional)</label>
+                <p class="caution-txt">Fields marked with * are mandatory.</p>
+                <p class="caution-txt">By submitting, you agree to receive email communications from FOREX EXPO, including upcoming promotions, news and invites to relevant events.</p>
+                <textarea name="" id="" cols="" rows="5" placeholder="Message(Optional)"></textarea>
+
+                <div class="policy-box">
+                    <p>Protected by reCAPTCHA</p>
+                    <p>Privacy-Terms</p>
+                    <div>
+                        <img src="../images/policy.png" alt="">
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+                
+        </form>
+    </div>
+
+    <div class="twelve">
+        <h1>Contact Our Team</h1>
+        <p>Our team is committed to provide prompt and reliable assistance to our clients, and strive to be responsive
+            to their needs</p>
+
+        <div class="twelve-container">
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/04/card-1.png" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Sheeba</p>
+                <a href="mailto:sheeba@gmail.com">Email:sheeba@gmail.com</a>
+            </div>
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/04/card-2.png" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Syed</p>
+                <a href="mailto:syed@hqmena.com">Email:syed@hqmena.com</a>
+            </div>
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/04/card-3.png" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Sritama</p>
+                <a href="mailto:syed@hqmena.com">Email:syed@hqmena.com</a>
+            </div>
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/04/card-4.jpg" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Imane</p>
+                <a href="mailto:syed@hqmena.com">Email:syed@hqmena.com</a>
+            </div>
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/04/card-5.png" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Ezaz Ahamed</p>
+                <a href="mailto:syed@hqmena.com">Email:syed@hqmena.com</a>
+            </div>
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/04/card-6.png" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Sayali</p>
+                <a href="mailto:syed@hqmena.com">Email:syed@hqmena.com</a>
+            </div>
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/05/Img-2.webp" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Anjali Kumari</p>
+                <a href="mailto:syed@hqmena.com">Email:syed@hqmena.com</a>
+            </div>
+            <div class="twelve-card">
+                <img class="profile-icon" src="https://theforexexpo.com/wp-content/uploads/2024/09/Likitha.webp" alt="">
+                <p class="w-t"><img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/whatsapp.svg"
+                        alt=""> <img src="https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/telegram.svg"
+                        alt=""></p>
+                <p>Likitha Y</p>
+                <a href="mailto:syed@hqmena.com">Email:syed@hqmena.com</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="thirteen">
+        <div class="th-top">
+            <div class="thirteen-container">
+                <div class="th-top-left">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/Footer-Site-Logo.png"
+                        alt="">
+                    <p style="font-weight: bold;">Address</p>
+                    <h3>HUAN QIAO EVENT MANAGEMENT L.L.C</h3>
+                    <p>901, City Tower 2, Sheikh Zayed Road, Dubai, United Arab Emirates.
+                    </p>
+                </div>
+                <div class="th-top-right">
+                    <h2>ORGANIZED BY</h2>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                </div>
+            </div>
+        </div>
+        <div class="th-bottom">
+            <div class="thb-container">
+                <div class="th-footer">
+                    <h4>© 2024 Forex Expo. All rights reserved</h4>
+                    <ul>
+                        <li>
+                            <p>Terms and Conditions</p>
+                        </li>
+                        <li>
+                            <p>Privacy Policy</p>
+                        </li>
+                    </ul>
+                </div>
+                <p>Disclaimer: Forex Expo Dubai 2024 is an educational event designed to provide information on
+                    financial
+                    products and services. The views and opinions expressed by speakers, sponsors, exhibitors, and
+                    attendees
+                    are their own and do not necessarily reflect the views and opinions of the Forex Expo Dubai 2024
+                    organizers. The information provided at this event is for educational purposes only and should not
+                    be
+                    considered financial, legal, or investment advice. Attendees should always consult with a financial
+                    advisor before making any financial decisions. The organizers of Forex Expo Dubai 2024 will not be
+                    held
+                    responsible for any financial loss or damage that may result from the use of information provided at
+                    this event.</p>
+            </div>
+        </div>
+    </div>
+
+    <Script>
+        let toggle = document.getElementById("toggle");
+        let navigation = document.querySelector(".navigation")
+        let ovrl = document.querySelector(".ovrl");
+        toggle.addEventListener("click", () => {
+            navigation.classList.toggle("slider");
+            ovrl.classList.toggle("overlay");
+
+        })
+        window.onscroll = function () {
+            var header = document.getElementById
+                ('header');
+            let scroll = document.getElementById('scroll');
+            if (window.scrollY > 50) {
+                // Add background color when scrolled
+                header.classList.add('scrolled');
+                header.classList.remove('transparent');
+
+                scroll.classList.add('scroll2');
+                scroll.classList.remove('scroll1');
+            } else {
+                // Remove background color when at the top
+                header.classList.remove('scrolled');
+                header.classList.add('transparent');
+                scroll.classList.add('scroll1');
+                scroll.classList.remove('scroll2');
+            }
+        };
+        // Absolute scroll
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </Script>
+
+    <script>
+
+
+        // Left scolling animation
+        // Create an IntersectionObserver to trigger animations
+        const observerL = new IntersectionObserver((entries, observerL) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add fade-in class when the content is in view
+                    entry.target.classList.add('anime');
+                    // Stop observing after animation
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of the element is in view
+        });
+
+        // Select all sections with scroll-content class and observe them
+        const scrollContentsL = document.querySelectorAll('.animl');
+        scrollContentsL.forEach(content => {
+            observerL.observe(content); // Start observing each section
+
+        });
+
+        // Right scolling animation
+        // Create an IntersectionObserver to trigger animations
+        const observerR = new IntersectionObserver((entries, observerR) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add fade-in class when the content is in view
+                    entry.target.classList.add('anime');
+                    // Stop observing after animation
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of the element is in view
+        });
+
+        // Select all sections with scroll-content class and observe them
+        const scrollContentsR = document.querySelectorAll('.animr');
+        scrollContentsR.forEach(content => {
+            observerR.observe(content); // Start observing each section
+
+        });
+
+    </script>
+    <!-- input form required function must -->
+    <script>
+        document.querySelectorAll('#sponsorForm input[required]').forEach(input => {
+            input.addEventListener('blur', function () {
+                if (!input.value.trim()) {
+                    input.nextElementSibling.style.visibility = 'visible'; // Show error if empty
+                    input.classList.add('ip-line-red'); // Add red border
+                    console.log('Error: Empty input, red border added'); // Debugging
+                } else {
+                    input.nextElementSibling.style.visibility = 'hidden'; // Hide error if filled
+                    input.classList.remove('ip-line-red'); // Remove red border if filled
+                    console.log('Input filled, red border removed'); // Debugging
+                }
+            });
+
+            input.addEventListener('input', function () {
+                input.nextElementSibling.style.visibility = 'hidden'; // Hide error while typing
+                input.classList.remove('ip-line-red'); // Remove red border while typing
+                console.log('Typing in input, red border removed'); // Debugging
+            });
+        });
+
+    </script>
+
+<script>
+    const countrySelector = document.getElementById("country-selector");
+    const countryDroplist = document.querySelector(".country-list-container");
+    const phoneNumberInput = document.getElementById("phonenumber");
+
+    // Toggle the dropdown visibility
+    countrySelector.addEventListener("click", () => {
+        countryDroplist.classList.toggle("show");
+    });
+
+    // Add event listener to list items
+    document.querySelectorAll(".country-list-container li").forEach(item => {
+        item.addEventListener("click", (event) => {
+            // Set the selected country and update the input value
+            countrySelector.querySelector('.drp-down-select').textContent = item.textContent;
+            phoneNumberInput.value = item.getAttribute('value');
+            countryDroplist.classList.remove("show"); // Close the dropdown
+        });
+    });
+
+    // Close dropdown if clicking outside
+    window.addEventListener("click", (event) => {
+        if (!countrySelector.contains(event.target)) {
+            countryDroplist.classList.remove("show");
+        }
+    });
+</script>
+
+
+</body>
+
+</html>

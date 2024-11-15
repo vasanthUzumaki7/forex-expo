@@ -1,0 +1,89 @@
+.eighth .card8 .g8-card{
+    border: 5px solid rgba(128, 128, 128, 0.3); 
+}
+.card8 .g8-card img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.card8 p{
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.card8{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    height: max-content;
+}
+.eighth{
+    background-image: url(https://theforexexpo.com/wp-content/uploads/2024/09/GameExp-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.eighth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 100px 0px;
+}
+.eighth h1{
+    font-size: 47px !important;
+    color: white;
+    font-weight: bold;
+}
+
+#div3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://theforexexpo.com/wp-content/uploads/2024/09/Image-1.png');
+}
+#div4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://theforexexpo.com/wp-content/uploads/2024/09/Image-4-1.png');
+}
+
+
+@media screen and (max-width:992px) {
+    .eighth .card8 .g8-card{
+        width: 300px;
+    }
+    .eighth{
+        height: auto;
+        padding: 20px 10px;
+    }
+    .eighth h1 {
+        font-size: 40px !important;
+    }
+    .eighth-container{
+        padding: 30px 0px;
+    }
+
+    
+}
+
+@media screen and (max-width:600px){
+.eighth{
+    height: auto;
+    padding: 20px 10px;
+}
+.eighth .card8 .g8-card{
+    width: 100%;
+}
+.eighth h1 {
+    font-size: 30px !important;
+}
+.eighth-container{
+    padding: 20px 0px;
+}
+}

@@ -1,0 +1,99 @@
+
+.op-c-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.op-box{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.op-c-right{
+    height: 230px;
+    width: 200px;
+}
+.op-card{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 30px 20px;
+}
+.op-card .op-c-left{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(242, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+.op-c-left h3,a{
+    color: var(--red);
+    font-family: "Avenir" !important;
+}
+.op-c-left p{
+    font-family: 'circular';
+}
+.op-des{
+    text-align: center;
+    padding: 80px 80px 20px 80px;
+    font-size: 20px;
+    font-family: "circular";
+    max-width: 1200px;
+    margin: auto;
+}
+.qta-btn button{
+    width: 150px;
+    color: white;
+    background-color: var(--red);
+    border-radius: 10px;
+    border: none;
+    padding: 17px 20px;
+}
+.qta-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+@media screen and (max-width:1100px) {
+    .op-box{
+        flex-direction: column;
+    }
+    .op-card {
+        justify-content: center;
+        flex-grow: 1;
+    }
+    .op-card .op-c-left{
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .op-card{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 30px 20px;
+    }
+    .op-card .op-c-left {
+        width: 100%;
+        max-width: 100%;
+    }
+    .op-c-right{
+        width: 100%;
+        height: 100%;
+    }
+    .op-des{
+        text-align: center;
+        padding: 30px 30px 10px 30px;
+        font-size: var(--small);
+    }
+} 

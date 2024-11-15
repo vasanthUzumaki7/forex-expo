@@ -1,0 +1,206 @@
+
+.tr4-container h1{
+    color: white;
+    font-size: 43px;
+    margin-bottom: 15px;
+    font-family: "Avenir" !important;
+    font-weight: normal !important;
+}
+.tr4-container p{
+    font-size: 19px !important;
+    color: white;
+    line-height: 28px !important;
+    text-align: justify;
+    font-weight: normal;
+}
+.tr4-container{
+  padding: 50px 30px;
+    background: linear-gradient(to right,rgb(21, 30, 82),rgb(133, 15, 66));
+    
+}
+.tr4cc{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.tr4-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.tr3ovrdiv + p{
+    padding: 30px 60px;
+}
+
+
+/* tr5 */
+.tr5-top .tr5-top-l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 30px;
+}
+.tr5-top-l div  h2{
+color: white;
+font-size: var(--medium);
+font-family: "Avenir"!important;
+}
+.tr5-top-l div  p{
+    color: white;
+    font-size: var(--big);
+}
+.tr5-top-l i{
+    font-size:45px;
+    color: white;
+    margin-right: 10px;
+}
+.tr5-top{
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.tr5-top .tr5-r-line{
+    position: relative;
+
+}
+.tr5-top .tr5-r-line::before{
+    content: '';
+    width: 2px;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.tr5-content h1{
+    font-size: var(--xxl);
+    color: white;
+    font-weight: 100;
+    font-family: "Avenir" !important;
+}
+.tr5-content p{
+    color: white;
+    font-size: 22px !important;
+    max-width: 900px;
+    font-weight: normal;
+
+}
+.g-button1{
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+.g-button2{
+    color: white;
+    background-color: var(--red);
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.tr5-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.tr5-container{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ) ,url(https://theforexexpo.com/wp-content/uploads/2024/07/Novotel-Ibis.jpg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap:20px;
+    padding-left:50px ;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:1500px) {
+    .tr5-container{
+        height: 100vh !important;
+    }
+}
+
+@media screen and (max-width:992px){
+    .tr5-top{
+        width:max-content;
+        flex-direction: column;
+        
+    }
+    .tr5-top .tr5-r-line{
+        margin-bottom: 10px;
+    }
+    .tr5-top-l div h2{
+        font-size: 38px !important;
+    }
+    .tr5-top-l div p{
+        font-size: 20px!important;
+    }
+    .tr5-top-l i{
+        font-size: 30px;
+
+    }
+    .tr4-container{
+        padding: 30px;
+    }
+    .tr5-container{
+        height: auto !important;
+    }
+    .tr5-content{
+        padding: 50px 20px;
+    }
+    .tr4-container h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:552px) {
+    .tr5-container{
+        height: auto;
+        padding: 20px;
+    }
+    .tr5-content h1{
+        font-size: 38px !important;
+        color: white;
+        font-weight: 100;
+    }
+    .tr5-content p{
+        color: white;
+        font-size: 20px !important;
+        max-width: 700px;
+        font-weight: 100;
+    }
+    .tr4-container{
+        padding: 20px ;
+    }
+    .tr4-container p{
+        font-size: 15px;
+    }
+    .tr3ovrdiv + p{
+        padding: 20px;
+    }
+    .tr5-container{
+        height: auto !important;
+    }
+    .tr5-content{
+        padding: 0px;
+    }
+}

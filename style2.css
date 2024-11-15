@@ -1,0 +1,158 @@
+ .cards .card1{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+ .cards .card1:hover .card-cont{
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    
+}
+
+ .cards .card1 .card-img{
+
+    width: 100%;
+    height: 50%;
+}
+.card1 div img{
+    width: 100%;
+    height: 100%;
+}
+.card-cont h2{
+    margin-bottom: 10px;
+    font-family: "Avenir" !important;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.cards .card1 .card-cont{
+    background: linear-gradient(to right,rgb(20, 30, 82),rgb(125, 16, 67));
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    text-align: start;
+    font-size: 17px;
+    color: white;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.cards .card1 .card-cont p{
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    line-height: 20px;
+    text-align: start;
+    color: white;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 50%;
+}
+.cards .card1:hover .card-cont p{
+    transition: 0.3s;
+    height: 100%;
+    -webkit-line-clamp: 20;
+}
+.second h1{
+    color: rgb(20, 29, 79);
+    font-weight: bolder;
+    font-size: 40px;
+}
+.second p{
+    color: grey;
+    max-width: 600px;
+    text-align: center;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+
+}
+.second .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.second .section div h1{
+    color: rgb(20, 29, 79);
+    font-family: "Avenir" !important;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+.second .section div h1::before{
+    content: "+";
+    position: absolute;
+    right: -35px;
+    color:rgb(20, 29, 79) ;
+}
+.second .section div span{
+    font-family: "Avenir";
+    color: black;
+    font-size: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.second .section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+@media screen and (max-width:992px) {
+    .cards .card1{
+        width: 500px;
+        height: 400px;
+        
+    }
+    .second .section div h1{
+        color:rgb(20, 29, 79);
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .second .section div span{
+        font-size: 18px;
+    }
+    .second .section div h1::before{
+        right: -22px;
+    }
+}
+@media screen and (max-width:540px) {
+    .cards .card1{
+        width: 100%;
+        height: 350px;
+
+    }
+    .second{
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .second .section div span{
+        font-weight: bold;
+        color: black;
+        font-size: 20px;
+    }
+    .second .section div{
+        width: 40%;
+        text-align: center;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Toggle Example</title>
+    <link rel="stylesheet" href="./sub-css/myagenda.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style9.css" />
+    <link rel="stylesheet" href="../style12.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../absolute.css" />
+
+    <link rel="stylesheet" href="../sub-pages/sub-css/event.css" />
+
+    <link href="https://fonts.cdnfonts.com/css/big-john" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <style>
+      .Event-banner img {
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+
+      .Event-banner {
+        width: 100%;
+        height: 100%;
+        height: 40vh;
+        position: relative;
+      }
+
+      .Event-banner .e-banner {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+      }
+
+      .Event-banner .e-b-layer {
+        z-index: 3;
+        object-fit: cover;
+        height: 100%;
+      }
+
+      .Event-banner h1 {
+            color: white;
+            position: absolute;
+            top: 65%;
+            left: 170px;
+            font-weight: 900;
+            font-size: 40px;
+            z-index: 4;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            font-family: "big john";
+        }
+
+        .Event-banner h1::before {
+            height: 100%;
+            width: 7px;
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 0;
+            background-color: rgb(214, 4, 127);
+        }
+
+      .animl {
+        transform: translateX(-30px);
+        opacity: 0;
+        transition: 1s;
+      }
+
+      .animr {
+        transform: translateX(30px);
+        opacity: 0;
+        transition: 1s;
+      }
+
+      .anime {
+        transform: translateX(0);
+        opacity: 1;
+        transition: 1s;
+      }
+      @media screen and (max-width:992px) {
+        .Event-banner h1{
+          font-size: 33px;
+        }
+      }
+      @media screen and (max-width:552px){
+        .Event-banner h1{
+          font-size: 26px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="absolute-container" style="z-index: 5">
+      <div class="app-icon" style="z-index: 5">
+        <div>
+          <img
+            src="https://theforexexpo.com/wp-content/uploads/2024/09/Buy-Tickets.png"
+            alt=""
+          />
+          Register Now
+        </div>
+
+        <img
+          src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Whatsapp.png"
+          alt=""
+        />
+        <img
+          src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Telegram.png"
+          alt=""
+        />
+
+        <a
+          href="javascript:void(0)"
+          onclick="scrollToTop()"
+          class="scroll1"
+          id="scroll"
+          ><button><i class="fa-solid fa-arrow-up"></i></button
+        ></a>
+      </div>
+      <div class="absolute-buttons" style="z-index: 5">
+        <h1>Event Completed</h1>
+        <div>
+          <button>Become Sponcer</button>
+          <button style="background-color: rgb(230, 0, 50); color: white">
+            Ready to visit
+          </button>
+          <button>Event App</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-clock">
+      <p>
+        <span style="color: brown">Address :</span> Hall 1, 2, 3, Dubai World
+        Trade Centre, UAE
+      </p>
+      <p>
+        <span style="color: brown">Date & Time :</span> 7 - 8 October 10:00AM -
+        6:00PM
+      </p>
+      <ul>
+        <li><span class="fab fa-facebook-f"></span></li>
+        <li><span class="fab fa-instagram"></span></li>
+        <li><span class="fa-brands fa-x-twitter"></span></li>
+        <li><span class="fab fa-linkedin"></span></li>
+      </ul>
+    </div>
+
+    <header class="heading" id="header">
+      <div class="container">
+          <div class="logo-container">
+              <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+          </div>
+          <nav id="navigation" class="navigation">
+
+              <div class="mobile-view">
+                  <a href=""><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+              </div>
+
+              <ul class="unlist" id="unlist">
+                  <li> <a href="../index.html">Home</a></li>
+                  <li class="menu1"> <a href="#">Visit</a>
+                      <ul class="list1">
+                          <li><a href="./Register.html">Register Now</a></li>
+                          <li><a href="./Event.html">Event App</a></li>
+                          <li><a href="./media.html">Media Partners</a></li>
+                          <li><a href="./trip.html">Plan Your Trip</a></li>
+                          <li><a href="./venue.html">Venue</a></li>
+                          <li><a href="./faq.html">FAQ</a></li>
+                      </ul>
+                  </li>
+                  <li class="menu2"> <a href="#">Exibit</a>
+                      <ul class="list2">
+                          <li><a href="./sponcers24.html">Sponsers 2024</a></li>
+                          <li><a href="./stand.html">Book Your Stand</a></li>
+                          <li><a href="./opportunity.html">Branding Opportunities</a></li>
+                      </ul>
+                  </li>
+                  <li class="menu2"> <a href="#">Agenda</a>
+                      <ul class="list2">
+                          <li><a href="./myagenda.html">Agenda</a></li>
+                          <li><a href="./speaker.html">Speaker 2024</a></li>
+                          <li><a href="./becomespeaker.html">Become Speaker</a></li>
+                      </ul>
+                  </li>
+                  <li> <a href="./sponcers24.html">Sponcer</a></li>
+                  <li> <a href="#">Floorplan</a></li>
+                  <li> <button class="btn-1">Become Sponcer</button></li>
+                  <li> <button class="btn-2">Register to Visit</button></li>
+
+              </ul>
+          </nav>
+          <div class="ovrl"></div>
+          <div class="toggle" id="toggle">
+              <div class="m-d"></div>
+              <div class="m-d" style="width: 25px;"></div>
+              <div class="m-d"></div>
+              <div class="m-d" style="width: 25px;"></div>
+              <!-- <div class="togL"></div>
+              <div class="togR"></div> -->
+          </div>
+      </div>
+  </header>
+
+    <div class="Event-banner">
+     
+      <img
+        class="e-banner"
+        src="https://event.theforexexpo.com/assets/mexico/client/images/sub-banner.jpg"
+        alt=""
+      />
+      <h1>AGENDA</h1>
+    </div>
+
+    <!-- vertical tab -->
+    <div class="agenda">
+      <div class="agn-top">
+        <div class="agn-div1" id="day1" onclick="Days(this)">
+          <h2><span>Day 1 </span>07 October 2024</h2>
+        </div>
+        <div class="agn-div1" id="day2" onclick="Days(this)">
+          <h2><span>Day 2 </span>08 October 2024</h2>
+        </div>
+        <div>
+          <button class="mybtn-2">
+            <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+            Add element
+          </button>
+        </div>
+      </div>
+
+      <div class="day day-1">
+        <div class="agn-mid">
+          <button class="agn-btn" id="conference">CONFERENCE HALL</button>
+          <button class="agn-btn" id="traders">TRADERS HALL</button>
+        </div>
+        <div class="agc-container cp-1">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:00 AM - 10:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 07, Monday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION 1:
+              </p>
+              <p style="display: inline-block">
+                Risk Management in a Volatile World: Strategies for Success
+              </p>
+              <h3 id="to-heading">Are there Food and Beverages Available?</h3>
+            </div>
+            <div class="to-desc">
+              Yes, food and beverages will be available for purchase in
+              designated areas throughout the event venue. Attendees can choose
+              from a variety of dining options to suit different tastes and
+              preferences.
+            </div>
+          </div>
+        </div>
+        <div class="agc-container cp-2">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:30 AM - 11:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1.30 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 07, Monday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION1:
+              </p>
+              <p style="display: inline-block">
+                Evolution of the Forex Market: Strategies, Innovations, and
+                Future Trends
+              </p>
+
+              <h3 id="to-heading">
+                Forex Market: A World of Unparallel Opportunities?
+              </h3>
+            </div>
+            <div class="to-desc">
+              Execute Trades Instantly with Ultra-Fast Execution: Experience
+              lightning-fast order execution with minimal latency and slippage,
+              empowering you to seize market opportunities in real time. Master
+              the Market with Powerful Tools: Gain a competitive edge using
+              real-time algorithms, advanced risk management, and high-speed
+              data feeds for smarter, more precise trading decisions.
+            </div>
+          </div>
+        </div>
+        <div class="agc-container cp-1">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:00 AM - 10:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 07, Monday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION 1:
+              </p>
+              <p style="display: inline-block">
+                Risk Management in a Volatile World: Strategies for Success
+              </p>
+              <h3 id="to-heading">Are there Food and Beverages Available?</h3>
+            </div>
+            <div class="to-desc">
+              Yes, food and beverages will be available for purchase in
+              designated areas throughout the event venue. Attendees can choose
+              from a variety of dining options to suit different tastes and
+              preferences.
+            </div>
+          </div>
+        </div>
+        <div class="agc-container cp-2">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:30 AM - 11:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1.30 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 07, Monday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION1:
+              </p>
+              <p style="display: inline-block">
+                Evolution of the Forex Market: Strategies, Innovations, and
+                Future Trends
+              </p>
+
+              <h3 id="to-heading">
+                Forex Market: A World of Unparallel Opportunities?
+              </h3>
+            </div>
+            <div class="to-desc">
+              Execute Trades Instantly with Ultra-Fast Execution: Experience
+              lightning-fast order execution with minimal latency and slippage,
+              empowering you to seize market opportunities in real time. Master
+              the Market with Powerful Tools: Gain a competitive edge using
+              real-time algorithms, advanced risk management, and high-speed
+              data feeds for smarter, more precise trading decisions.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="day day-2">
+        <div class="agn-mid">
+          <button class="agn-btn2" id="conference2">CONFERENCE HALL2</button>
+          <button class="agn-btn2" id="traders2">TRADERS HALL2</button>
+        </div>
+        <div class="agc-container cp-3">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:00 AM - 10:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 08, Tuesday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION2:
+              </p>
+              <p style="display: inline-block">
+                Risk Management in a Volatile World: Strategies for Success
+              </p>
+              <h3 id="to-heading">Are there Food and Beverages Available?</h3>
+            </div>
+            <div class="to-desc">
+              Yes, food and beverages will be available for purchase in
+              designated areas throughout the event venue. Attendees can choose
+              from a variety of dining options to suit different tastes and
+              preferences.
+            </div>
+          </div>
+        </div>
+        <div class="agc-container cp-4">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:30 AM - 11:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1.30 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 08, Tuesday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION2:
+              </p>
+              <p style="display: inline-block">
+                Evolution of the Forex Market: Strategies, Innovations, and
+                Future Trends
+              </p>
+
+              <h3 id="to-heading">
+                Forex Market: A World of Unparallel Opportunities?
+              </h3>
+            </div>
+            <div class="to-desc">
+              Execute Trades Instantly with Ultra-Fast Execution: Experience
+              lightning-fast order execution with minimal latency and slippage,
+              empowering you to seize market opportunities in real time. Master
+              the Market with Powerful Tools: Gain a competitive edge using
+              real-time algorithms, advanced risk management, and high-speed
+              data feeds for smarter, more precise trading decisions.
+            </div>
+          </div>
+        </div>
+        <div class="agc-container cp-3">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:00 AM - 10:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 08, Tuesday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION2:
+              </p>
+              <p style="display: inline-block">
+                Risk Management in a Volatile World: Strategies for Success
+              </p>
+              <h3 id="to-heading">Are there Food and Beverages Available?</h3>
+            </div>
+            <div class="to-desc">
+              Yes, food and beverages will be available for purchase in
+              designated areas throughout the event venue. Attendees can choose
+              from a variety of dining options to suit different tastes and
+              preferences.
+            </div>
+          </div>
+        </div>
+        <div class="agc-container cp-4">
+          <div class="ag-card">
+            <p style="font-weight: 800">9:30 AM - 11:00 AM</p>
+            <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1.30 hour )</p>
+            <div></div>
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>October 08, Tuesday</p>
+          </div>
+
+          <div class="agen-don">
+            <div class="agen-head" onclick="toggleDescription(this)">
+              <p style="width: max-content; display: inline-block">
+                <i class="fa-solid fa-circle-info"></i> SESSION2:
+              </p>
+              <p style="display: inline-block">
+                Evolution of the Forex Market: Strategies, Innovations, and
+                Future Trends
+              </p>
+
+              <h3 id="to-heading">
+                Forex Market: A World of Unparallel Opportunities?
+              </h3>
+            </div>
+            <div class="to-desc">
+              Execute Trades Instantly with Ultra-Fast Execution: Experience
+              lightning-fast order execution with minimal latency and slippage,
+              empowering you to seize market opportunities in real time. Master
+              the Market with Powerful Tools: Gain a competitive edge using
+              real-time algorithms, advanced risk management, and high-speed
+              data feeds for smarter, more precise trading decisions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="thirteen">
+      <div class="th-top">
+        <div class="thirteen-container">
+          <div class="th-top-left">
+            <img
+              src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/Footer-Site-Logo.png"
+              alt=""
+            />
+            <p style="font-weight: bold">Address</p>
+            <h3>HUAN QIAO EVENT MANAGEMENT L.L.C</h3>
+            <p>
+              901, City Tower 2, Sheikh Zayed Road, Dubai, United Arab Emirates.
+            </p>
+          </div>
+          <div class="th-top-right">
+            <h2>ORGANIZED BY</h2>
+            <p>
+              Huan Qiao Event Management is where we bring you a seamless
+              experience and a one-stop solution for all segments in Crypto and
+              Forex Expo. Our dedicated team ensures the presence of industry
+              pioneers with cutting-edge knowledge in the relevant markets.
+            </p>
+            <p>
+              Huan Qiao Event Management is where we bring you a seamless
+              experience and a one-stop solution for all segments in Crypto and
+              Forex Expo. Our dedicated team ensures the presence of industry
+              pioneers with cutting-edge knowledge in the relevant markets.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="th-bottom">
+        <div class="thb-container">
+          <div class="th-footer">
+            <h4>© 2024 Forex Expo. All rights reserved</h4>
+            <ul>
+              <li>
+                <p>Terms and Conditions</p>
+              </li>
+              <li>
+                <p>Privacy Policy</p>
+              </li>
+            </ul>
+          </div>
+          <p>
+            Disclaimer: Forex Expo Dubai 2024 is an educational event designed
+            to provide information on financial products and services. The views
+            and opinions expressed by speakers, sponsors, exhibitors, and
+            attendees are their own and do not necessarily reflect the views and
+            opinions of the Forex Expo Dubai 2024 organizers. The information
+            provided at this event is for educational purposes only and should
+            not be considered financial, legal, or investment advice. Attendees
+            should always consult with a financial advisor before making any
+            financial decisions. The organizers of Forex Expo Dubai 2024 will
+            not be held responsible for any financial loss or damage that may
+            result from the use of information provided at this event.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../sub-pages/myscript.js"></script>
+
+    <!-- day button -->
+    <script>
+      // button centent change-start
+      const day1 = document.getElementById("day1");
+      const day2 = document.getElementById("day2");
+      const cpcontent1 = document.querySelectorAll(".day-1");
+      const cpcontent2 = document.querySelectorAll(".day-2");
+
+      const conferenceButton = document.getElementById("conference");
+      const tradersButton = document.getElementById("traders");
+      const cp1Elements = document.querySelectorAll(".cp-1");
+      const cp2Elements = document.querySelectorAll(".cp-2");
+
+      // button centent change-start
+      const conferenceButton2 = document.getElementById("conference2");
+      const tradersButton2 = document.getElementById("traders2");
+      const cp3Elements = document.querySelectorAll(".cp-3");
+      const cp4Elements = document.querySelectorAll(".cp-4");
+
+
+      const conference2 = document.getElementById("conference2");
+        const traders2 = document.getElementById("traders2");
+        const conference = document.getElementById("conference");
+        const traders = document.getElementById("traders");
+
+      function Days(myevent) {
+        if (myevent === day1) {
+          day1.classList.add("active");
+          day2.classList.remove("active");
+          conference.click()
+          cpcontent1.forEach((item) => {
+            item.classList.add("active");
+          });
+          cpcontent2.forEach((item) => {
+            item.classList.remove("active");
+          });
+          conferenceButton.classList.add("active");
+          tradersButton.classList.remove("active");
+
+          conferenceButton2.classList.remove("active");
+          tradersButton2.classList.remove("active");
+        } else {
+          day1.classList.remove("active");
+          day2.classList.add("active");
+          conference2.click()
+          cpcontent1.forEach((item) => {
+            item.classList.remove("active");
+          });
+          cpcontent2.forEach((item) => {
+            item.classList.add("active");
+          });
+          conferenceButton2.classList.add("active");
+          tradersButton2.classList.remove("active");
+
+          conferenceButton.classList.remove("active");
+          tradersButton.classList.remove("active");
+        }
+      }
+      Days(day1);
+      day1.addEventListener("click", day1);
+      day2.addEventListener("click", day2);
+    </script>
+
+    <!-- conference 1 traders 1 day 1-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const conference = document.getElementById("conference");
+        const traders = document.getElementById("traders");
+        function activateButton(clickedButton) {
+          conference.classList.remove("active");
+          traders.classList.remove("active");
+
+          clickedButton.classList.add("active");
+        }
+        activateButton(conference);
+
+        conference.addEventListener("click", function () {
+          activateButton(conference);
+          console.log('conference clicked');
+        });
+        traders.addEventListener("click", function () {
+          activateButton(traders);
+        });
+      });
+
+      function showConference() {
+        cp1Elements.forEach((element) => element.classList.add("active"));
+        cp2Elements.forEach((element) => element.classList.remove("active"));
+      }
+      function showTraders() {
+        cp1Elements.forEach((element) => element.classList.remove("active"));
+        cp2Elements.forEach((element) => element.classList.add("active"));
+      }
+      conferenceButton.addEventListener("click", showConference);
+      tradersButton.addEventListener("click", showTraders);
+      showConference();
+    </script>
+    <!-- conference 2 traders 2 day 2-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const conference2 = document.getElementById("conference2");
+        const traders2 = document.getElementById("traders2");
+
+        function activateButton(clickedButton) {
+          conference2.classList.remove("active");
+          traders2.classList.remove("active");
+          clickedButton.classList.add("active");
+        }
+        activateButton(conference2);
+        conference2.addEventListener("click", function () {
+          activateButton(conference2);
+          console.log('conference2 clicked');
+        });
+        traders2.addEventListener("click", function () {
+          activateButton(traders2);
+        });
+      });
+      
+      
+      function showConference2() {
+        cp3Elements.forEach((element) => element.classList.add("active"));
+        cp4Elements.forEach((element) => element.classList.remove("active"));
+      }
+      function showTraders2() {
+        cp3Elements.forEach((element) => element.classList.remove("active"));
+        cp4Elements.forEach((element) => element.classList.add("active"));
+      }
+      conferenceButton2.addEventListener("click", showConference2);
+      tradersButton2.addEventListener("click", showTraders2);
+
+      showConference2();
+    </script>
+
+    <script>
+      // faq drop down
+      function toggleDescription(element) {
+        const description = element.nextElementSibling; // Get the next sibling (the description)
+        const heading = element.querySelector("h3"); // Get the heading inside the clicked element
+
+        // Toggle the description height
+        if (description.style.maxHeight) {
+          description.style.maxHeight = null; // Collapse the description
+          description.classList.remove("white"); // Remove expanded class
+        } else {
+          description.style.maxHeight = description.scrollHeight + "px"; // Expand the description to full height
+          description.classList.add("white"); // Add expanded class
+        }
+
+        // Toggle the rotated class for the arrow rotation
+        heading.classList.toggle("rotated");
+      }
+    </script>
+
+    <!-- <script>
+      // button style change-start
+      document.addEventListener("DOMContentLoaded", function () {
+        const day1 = document.getElementById("day1");
+        const day2 = document.getElementById("day2");
+        // Function to activate the clicked button and remove active from others
+        function activateButton(clickedButton) {
+
+          day1.classList.remove("active");
+          day2.classList.remove("active");
+        
+          clickedButton.classList.add("active");
+        }
+        // Set "Day 1" as active on page load
+        activateButton(day1);
+
+        // Add event listeners for clicks on each day
+        day1.addEventListener("click", function () {
+          activateButton(day1);
+          showDay1();
+        });
+        day2.addEventListener("click", function () {
+          activateButton(day2);
+          showDay2();
+        });
+      });
+
+      // button content change
+      const day1 = document.getElementById("day1");
+      const day2 = document.getElementById("day2");
+      const cpcontent1 = document.querySelectorAll(".day-1");
+      const cpcontent2 = document.querySelectorAll(".day-2");
+
+      // Function to show Day 1 content
+      function showDay1() {
+        cpcontent1.forEach((element) => element.classList.add("active"));
+        cpcontent2.forEach((element) => element.classList.remove("active"));
+      }
+      // Function to show Day 2 content
+      function showDay2() {
+        cpcontent1.forEach((element) => element.classList.remove("active"));
+        cpcontent2.forEach((element) => element.classList.add("active"));
+      }
+
+      // Initially show CP1 (Day 1 content) and hide CP2 (Day 2 content)
+      showDay1();
+
+      // Button style change - Conference and Traders
+      const conferenceButton = document.getElementById("conference");
+      const tradersButton = document.getElementById("traders");
+      const cp1Elements = document.querySelectorAll(".cp-1");
+      const cp2Elements = document.querySelectorAll(".cp-2");
+
+      function showConference() {
+        cp1Elements.forEach((element) => element.classList.add("active"));
+        cp2Elements.forEach((element) => element.classList.remove("active"));
+      }
+
+      function showTraders() {
+        cp1Elements.forEach((element) => element.classList.remove("active"));
+        cp2Elements.forEach((element) => element.classList.add("active"));
+      }
+
+      conferenceButton.addEventListener("click", showConference);
+      tradersButton.addEventListener("click", showTraders);
+
+      // Initially show Conference content
+      showConference();
+
+      // Day 2 Button Style Change
+      const conferenceButton2 = document.getElementById("conference2");
+      const tradersButton2 = document.getElementById("traders2");
+      const cp3Elements = document.querySelectorAll(".cp-3");
+      const cp4Elements = document.querySelectorAll(".cp-4");
+
+      function showConference2() {
+        cp3Elements.forEach((element) => element.classList.add("active"));
+        cp4Elements.forEach((element) => element.classList.remove("active"));
+      }
+
+      function showTraders2() {
+        cp3Elements.forEach((element) => element.classList.remove("active"));
+        cp4Elements.forEach((element) => element.classList.add("active"));
+      }
+
+      conferenceButton2.addEventListener("click", showConference2);
+      tradersButton2.addEventListener("click", showTraders2);
+
+      // Initially show Conference 2 content
+      showConference2();
+    </script>     
+    <script>
+      // FAQ dropdown toggle
+      function toggleDescription(element) {
+        const description = element.nextElementSibling;
+        const heading = element.querySelector("h3");
+
+        if (description.style.maxHeight) {
+          description.style.maxHeight = null; // Collapse the description
+          description.classList.remove("white"); // Remove expanded class
+        } else {
+          description.style.maxHeight = description.scrollHeight + "px"; // Expand the description
+          description.classList.add("white"); // Add expanded class
+        }
+
+        heading.classList.toggle("rotated");
+      }
+    </script> -->
+
+    <!--
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the elements by their IDs
+        const day1 = document.getElementById("day1");
+        const day2 = document.getElementById("day2");
+
+        // Function to activate the clicked button and remove active from others
+        function activateButton(clickedButton) {
+          // Remove active class from both buttons
+          day1.classList.remove("active");
+          day2.classList.remove("active");
+          // Add active class to the clicked button
+          clickedButton.classList.add("active");
+        }
+        // Set "Day 1" as active on page load
+       
+        activateButton(day1);
+
+        // Add event listeners for clicks on each day
+        day1.addEventListener("click", function () {
+          activateButton(day1);
+        });
+        day2.addEventListener("click", function () {
+          activateButton(day2);
+        });
+      });
+
+
+       // button centent change-start
+       const day1 = document.getElementById("day1");
+       const day2 = document.getElementById("day2");
+      const cpcontent1 = document.querySelectorAll(".day-1");
+      const cpcontent2 = document.querySelectorAll(".day-2");
+      // Function to hide cp-1 and show cp-2
+      function showDay1() {
+        cpcontent1.forEach((element) => element.classList.add("active"));
+        cpcontent2.forEach((element) => element.classList.remove("active"));
+      }
+      // Function to hide cp-2 and show cp-1
+      function showDay2() {
+        cpcontent1.forEach((element) => element.classList.remove("active"));
+        cpcontent2.forEach((element) => element.classList.add("active"));
+      }
+      // Add event listeners to buttons
+      day1.addEventListener("click", showDay1);
+      day2.addEventListener("click", showDay2);
+      // Initially show CP1 and hide CP2 (optional, depending on default state)
+      showDay1();
+      // button centent change-end
+    </script>
+    <script>
+      // button style change -start
+document.addEventListener("DOMContentLoaded", function () {
+        // Get the elements by their IDs
+        const conference = document.getElementById("conference");
+        const traders = document.getElementById("traders");
+        // Function to activate the clicked button and remove active from others
+        function activateButton(clickedButton) {
+          // Remove active class from both buttons
+          conference.classList.remove("active");
+          traders.classList.remove("active");
+          // Add active class to the clicked button
+          clickedButton.classList.add("active");
+        }
+        // Set "Day 1" as active on page load
+
+        // activateButton(conference);
+
+        // Add event listeners for clicks on each day
+        conference.addEventListener("click", function () {
+          activateButton(conference);
+        });
+        traders.addEventListener("click", function () {
+          activateButton(traders);
+        });
+      });
+
+      // button style change end
+
+      // button centent change-start
+      const conferenceButton = document.getElementById("conference");
+      const tradersButton = document.getElementById("traders");
+      const cp1Elements = document.querySelectorAll(".cp-1");
+      const cp2Elements = document.querySelectorAll(".cp-2");
+      // Function to hide cp-1 and show cp-2
+      function showConference() {
+        cp1Elements.forEach((element) => element.classList.add("active"));
+        cp2Elements.forEach((element) => element.classList.remove("active"));
+      }
+      // Function to hide cp-2 and show cp-1
+      function showTraders() {
+        cp1Elements.forEach((element) => element.classList.remove("active"));
+        cp2Elements.forEach((element) => element.classList.add("active"));
+      }
+      // Add event listeners to buttons
+      conferenceButton.addEventListener("click", showConference);
+      tradersButton.addEventListener("click", showTraders);
+      // Initially show CP1 and hide CP2 (optional, depending on default state)
+      showConference();
+
+      // button centent change-end
+    </script>
+<script>
+  // button style change -start
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the elements by their IDs
+    const conference2 = document.getElementById("conference2");
+    const traders2 = document.getElementById("traders2");
+    // Function to activate the clicked button and remove active from others
+    function activateButton(clickedButton) {
+      // Remove active class from both buttons
+      conference2.classList.remove("active");
+      traders2.classList.remove("active");
+      // Add active class to the clicked button
+      clickedButton.classList.add("active");
+    }
+    // Set "Day 1" as active on page load
+
+    // activateButton(conference2);
+
+    // Add event listeners for clicks on each day
+    conference2.addEventListener("click", function () {
+      activateButton(conference);
+    });
+    traders2.addEventListener("click", function () {
+      activateButton(traders);
+    });
+  });
+
+  // button style change end
+
+  // button centent change-start
+  const conferenceButton2 = document.getElementById("conference2");
+  const tradersButton2 = document.getElementById("traders2");
+  const cp3Elements = document.querySelectorAll(".cp-3");
+  const cp4Elements = document.querySelectorAll(".cp-4");
+  // Function to hide cp-3 and show cp-4
+  function showConference2() {
+    cp3Elements.forEach((element) => element.classList.add("active"));
+    cp4Elements.forEach((element) => element.classList.remove("active"));
+  }
+  // Function to hide cp-2 and show cp-1
+  function showTraders2() {
+    cp3Elements.forEach((element) => element.classList.remove("active"));
+    cp4Elements.forEach((element) => element.classList.add("active"));
+  }
+  // Add event listeners to buttons
+  conferenceButton2.addEventListener("click", showConference2);
+  tradersButton2.addEventListener("click", showTraders2);
+  // Initially show CP1 and hide CP2 (optional, depending on default state)
+  showConference2();
+
+  // button centent change-end
+</script>
+    <script>
+      // faq drop down
+      function toggleDescription(element) {
+        const description = element.nextElementSibling; // Get the next sibling (the description)
+        const heading = element.querySelector("h3"); // Get the heading inside the clicked element
+
+        // Toggle the description height
+        if (description.style.maxHeight) {
+          description.style.maxHeight = null; // Collapse the description
+          description.classList.remove("white"); // Remove expanded class
+        } else {
+          description.style.maxHeight = description.scrollHeight + "px"; // Expand the description to full height
+          description.classList.add("white"); // Add expanded class
+        }
+
+        // Toggle the rotated class for the arrow rotation
+        heading.classList.toggle("rotated");
+      }
+    </script>   
+ -->
+  </body>
+</html>

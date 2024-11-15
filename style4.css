@@ -1,0 +1,161 @@
+.fourth .stamps .stamp1{
+    width: 400px;
+    height: 240px;
+   background-color: black;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.fourth .stamps .stamp1 img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.fourth .stamps .stamp1 #play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size:x-large;
+}
+.fourth .stamps{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1500px;
+}
+
+.fourth h1{
+    color: rgb(19, 28, 79);
+    font-weight: bolder;
+    font-size: 40px;
+}
+.fourth p{
+    color: grey;
+    max-width: 66%;
+    text-align: center;
+
+}
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+ .fourth .clip-container{
+   display: none;
+} 
+.fourth .clip-close{
+    display: block;
+}
+.clip-container .clippings{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+ .clip-container .clips{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: max-content;
+    text-align: end;
+    z-index: 32;
+    position: relative;
+}
+
+.clip-container .clip-popup{
+    box-shadow: 0 0 5px white;
+    height: 400px;
+}
+.clip-container .ovrl2{
+    background-color: rgba(0, 0, 0, 0.644);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 10;
+}
+
+.clip-container iframe{
+    width: 100%;
+    height: 100%
+    
+}
+.clip-container i{
+    font-size: 30px;
+    margin: 6px 0px;
+    z-index: 32;
+    cursor: pointer;
+    color: white;
+} 
+
+
+@media screen and (max-width:1400px){
+    .fourth .stamps .stamp1{
+        width: 320px;
+        height: 180px;
+    }
+}
+@media screen and (max-width:1100px){
+    .fourth .stamps .stamp1{
+        width: 300px;
+        height: 180px;
+    }
+}
+@media screen and (max-width:992px){
+    .fourth .stamps .stamp1{
+        width: 285px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .clip-container .clips{
+        width: 100%;
+        max-width: 350px;
+        height: 100%;
+        max-height: max-content;
+        text-align: end;
+        z-index: 32;
+        position: relative;
+    }
+    .clip-container .clip-popup{
+        height: 280px;
+        margin: 0px 10px;
+    }
+}
+@media screen and (max-width:600px) {
+.fourth h1{
+    color: rgb(67, 67, 124);
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+}
+.fourth p{
+    padding: 0px 20px;
+}
+.fourth .stamps .stamp1{
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    margin: 0px 20px;
+    box-sizing: border-box;
+}
+.fourth {
+    margin-bottom: 60px;
+}
+}

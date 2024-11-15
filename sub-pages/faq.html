@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../style9.css">
+    <link rel="stylesheet" href="./sub-css/event.css">
+    <link rel="stylesheet" href="../style12.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../myslick.css">
+    <link rel="stylesheet" href="./sub-css/faq.css">
+
+    <link rel="stylesheet" href="../absolute.css">
+    <link rel="stylesheet" href="../style11.css">
+
+    <link href="https://fonts.cdnfonts.com/css/big-john" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <style>
+        .Event-banner img {
+
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .Event-banner {
+            width: 100%;
+            height: 350px;
+
+            position: relative;
+        }
+
+        .Event-banner .e-banner {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .Event-banner .e-b-layer {
+            z-index: 3;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+     
+        .Event-banner h1 {
+            color: white;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            font-weight: 900;
+            z-index: 4;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .animl {
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .animr {
+            transform: translateX(30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .anime {
+            transform: translateX(0);
+            opacity: 1;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="absolute-container" style="z-index: 5;">
+        <div class="app-icon" style="z-index: 5;">
+            <div>
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/09/Buy-Tickets.png" alt="">
+                Register Now
+            </div>
+
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Whatsapp.png" alt="">
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Telegram.png" alt="">
+
+            <a href="javascript:void(0)" onclick="scrollToTop()" class="scroll1" id="scroll"><button><i
+                        class="fa-solid fa-arrow-up"></i></button></a>
+        </div>
+        <div class="absolute-buttons" style="z-index: 5;">
+            <h1>Event Completed</h1>
+            <div>
+                <button>Become Sponcer</button>
+                <button style="background-color: rgb(230, 0, 50);color: white;">Ready to visit</button>
+                <button>Event App</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-clock">
+        <p><span style="color: brown;">Address :</span> Hall 1, 2, 3, Dubai World Trade Centre, UAE</p>
+        <p><span style="color: brown;">Date & Time :</span> 7 - 8 October 10:00AM - 6:00PM</p>
+        <ul>
+            <li><span class="fab fa-facebook-f"></span></li>
+            <li><span class="fab fa-instagram"></span></li>
+            <li><span class="fa-brands fa-x-twitter"></span></li>
+            <li><span class="fab fa-linkedin"></span></li>
+        </ul>
+    </div>
+
+    <header class="heading" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+            </div>
+            <nav id="navigation" class="navigation">
+
+                <div class="mobile-view">
+                    <a href=""><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+                </div>
+
+                <ul class="unlist" id="unlist">
+                    <li> <a href="../index.html">Home</a></li>
+                    <li class="menu1"> <a href="#">Visit</a>
+                        <ul class="list1">
+                            <li><a href="./Register.html">Register Now</a></li>
+                            <li><a href="./Event.html">Event App</a></li>
+                            <li><a href="./media.html">Media Partners</a></li>
+                            <li><a href="./trip.html">Plan Your Trip</a></li>
+                            <li><a href="./venue.html">Venue</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Exibit</a>
+                        <ul class="list2">
+                            <li><a href="./sponcers24.html">Sponsers 2024</a></li>
+                            <li><a href="./stand.html">Book Your Stand</a></li>
+                            <li><a href="./opportunity.html">Branding Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Agenda</a>
+                        <ul class="list2">
+                            <li><a href="./myagenda.html">Agenda</a></li>
+                            <li><a href="./speaker.html">Speaker 2024</a></li>
+                            <li><a href="./becomespeaker.html">Become Speaker</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="./sponcers24.html">Sponcer</a></li>
+                    <li> <a href="#">Floorplan</a></li>
+                    <li> <button class="btn-1">Become Sponcer</button></li>
+                    <li> <button class="btn-2">Register to Visit</button></li>
+
+                </ul>
+            </nav>
+            <div class="ovrl"></div>
+            <div class="toggle" id="toggle">
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <!-- <div class="togL"></div>
+                <div class="togR"></div> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="Event-banner">
+        <img class="e-b-layer" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/bg-2.png" alt="">
+        <img class="e-banner" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/05/04-2-1440x394.jpg"
+            alt="">
+        <h1>FAQ</h1>
+    </div>
+
+    <div class="faq1">
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">What is Forex Expo Dubai 2023?</h3>
+        </div>
+        <div class="drp-desc">Forex Expo Dubai 2024, organized by HQMENA is the leading B2B and B2C exhibition in the
+            forex, online trading, fintech, and cryptocurrency industries in the Middle East. This event is perfect for
+            individuals and organizations looking to explore new business opportunities, expand their client base, and
+            stay ahead in the dynamic forex market.
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 >Where will Forex Expo 2024 Takes place?</h3>
+        </div>
+        <div class="drp-desc">Forex Expo Dubai 2024 will be held at Hall 1-3 of Dubai World Trade Centre, Sheikh Zayed Road, Dubai, United Arab Emirates.
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Should i Register as an Individual or Bussiness</h3>
+        </div>
+        <div class="drp-desc">
+            <p>You can register as an individual or business based on the following criteria:</p>
+            <h4>Business Registration:</h4>
+            <p>Representing a company in forex, online trading, fintech, or cryptocurrency.</p>
+            <p>Seeking to promote your company's products/services.</p>
+            <p>Looking to do business with other companies.
+            </p>
+            <p>Interested in IB/Affiliate programs.</p>
+            <h4>IB Registration:</h4>
+            <p>New to forex and online trading and eager to learn.</p>
+            <p>Already trading and wanting to expand knowledge and skills.</p>
+            <p>Interested in IB/Affiliate programs.</p>
+            <p>Networking with other traders and brokers.</p>
+            <p>Learning about new trading platforms and tools.</p>
+            <h4>Visitor Categories:</h4>
+            <p>Actively involved in trading and investing across various markets, including forex and stocks.</p>
+            <p>Seeking to connect with industry experts and like-minded professionals.</p>
+            <p>Looking for the latest tools, platforms, strategies, and technologies in trading and investing.</p>
+            <p>Interested in attending specialized sessions and learning from market leaders.</p>
+            <p>Networking with other traders, investors, brokers, and financial professionals.
+            </p>
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">What is Forex Expo Dubai 2023?</h3>
+        </div>
+        <div class="drp-desc">Forex Expo Dubai 2024 features a lineup of renowned experts, industry leaders, and analysts in forex, fintech, and cryptocurrency. For a complete list of speakers and the event agenda, visit the event’s website.
+            View Speakers
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Who Wil be Speaking at Forex Expo Dubai 2024?</h3>
+        </div>
+        <div class="drp-desc">Forex Expo Dubai 2024, organized by HQMENA is the leading B2B and B2C exhibition in the
+            forex, online trading, fintech, and cryptocurrency industries in the Middle East. This event is perfect for
+            individuals and organizations looking to explore new business opportunities, expand their client base, and
+            stay ahead in the dynamic forex market.
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Is there a Dress Code?</h3>
+        </div>
+        <div class="drp-desc">Attendees are encouraged to dress in business casual or business attire to maintain a professional atmosphere
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Is my Pass Transferable to another Person</h3>
+        </div>
+        <div class="drp-desc">No, all passes are non-transferable and are valid only for the named holder.
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Do i Qualify as an affiliate, Introducing Broker(IB),Broker or Tablet?</h3>
+        </div>
+        <div class="drp-desc"><p>To ensure you register correctly, please note the following categories:</p>
+            <p><span>Affiliates:</span>Promote Forex Brokers' products/services and receive commissions or CPA for each account opened</p>
+            <p><span>Introducing Brokers (IBs):</span> Introduce new customers to Forex Brokers and receive a fee/commission</p>
+            <p><span>Brokers:</span>Provide trading services to clients and promote these services on your website.</p>
+            <p><span>Traders:</span>Individuals interested in or actively trading.</p>
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Do you Offer Media Passes for Forex EXpo Dubai 2024?</h3>
+        </div>
+        <div class="drp-desc"><p>Yes, media passes are available. To apply,</p>
+            <p>Email : anjali@hqmena.com</p>
+            <p>with your Company details. Once verified, we will inform you of your application status.</p>
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Where Do i Collect my Badge?</h3>
+        </div>
+        <div class="drp-desc">
+            <p>After registration approval, you’ll receive an email with a bar-coded ticket. Present this ticket at the badge pick-up area:</p>
+            <p>7 October 2024 | 10 am to 5 pm | Dubai World Trade Centre - Registration Desks</p>
+            <p>8 October 2024 | 10 am to 5 pm |Dubai World Trade Centre - Registration Desks</p>
+        </div>
+    </div>
+    <div class="drp-don">
+        <div class="drp-head" onclick="toggleDescription(this)">
+            <h3 id="toggle-heading">Are there Food and Beverages Available?</h3>
+        </div>
+        <div class="drp-desc">
+            Yes, food and beverages will be available for purchase in designated areas throughout the event venue. Attendees can choose from a variety of dining options to suit different tastes and preferences.
+        </div>
+    </div>
+</div>
+
+<div class="thirteen">
+    <div class="th-top">
+        <div class="thirteen-container">
+            <div class="th-top-left">
+                <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/Footer-Site-Logo.png"
+                    alt="">
+                <p style="font-weight: bold;">Address</p>
+                <h3>HUAN QIAO EVENT MANAGEMENT L.L.C</h3>
+                <p>901, City Tower 2, Sheikh Zayed Road, Dubai, United Arab Emirates.
+                </p>
+            </div>
+            <div class="th-top-right">
+                <h2>ORGANIZED BY</h2>
+                <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                    for
+                    all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                    pioneers
+                    with cutting-edge knowledge in the relevant markets.</p>
+                <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                    for
+                    all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                    pioneers
+                    with cutting-edge knowledge in the relevant markets.</p>
+            </div>
+        </div>
+    </div>
+    <div class="th-bottom">
+        <div class="thb-container">
+            <div class="th-footer">
+                <h4>© 2024 Forex Expo. All rights reserved</h4>
+                <ul>
+                    <li>
+                        <p>Terms and Conditions</p>
+                    </li>
+                    <li>
+                        <p>Privacy Policy</p>
+                    </li>
+                </ul>
+            </div>
+            <p>Disclaimer: Forex Expo Dubai 2024 is an educational event designed to provide information on
+                financial
+                products and services. The views and opinions expressed by speakers, sponsors, exhibitors, and
+                attendees
+                are their own and do not necessarily reflect the views and opinions of the Forex Expo Dubai 2024
+                organizers. The information provided at this event is for educational purposes only and should not
+                be
+                considered financial, legal, or investment advice. Attendees should always consult with a financial
+                advisor before making any financial decisions. The organizers of Forex Expo Dubai 2024 will not be
+                held
+                responsible for any financial loss or damage that may result from the use of information provided at
+                this event.</p>
+        </div>
+    </div>
+</div>
+
+<script src="./myscript.js"></script>
+
+    <!-- <script>
+        // faq drop down
+        function toggleDescription(element) {
+            const description = element.nextElementSibling; // Get the next sibling (the description)
+            const heading = element.querySelector('h3'); // Get the heading inside the clicked element
+            
+            // Toggle the description height
+            if (description.style.maxHeight) {
+                description.style.maxHeight = null; // Collapse the description
+            } else {
+                description.style.maxHeight = description.scrollHeight + "px"; // Expand the description to full height
+            }
+
+            // Toggle the rotated class for the arrow rotation
+            heading.classList.toggle('rotated');
+        }
+    </script>
+  -->
+
+  <script>
+    // Track the currently opened description (if any)
+let currentOpenDescription = null;
+
+function toggleDescription(element) {
+    const description = element.nextElementSibling; // Get the description next to the clicked element
+    const heading = element.querySelector('h3'); // Get the heading inside the clicked element
+
+    // If there's a currently open description and it's not the one clicked, close it
+    if (currentOpenDescription && currentOpenDescription !== description) {
+        currentOpenDescription.style.maxHeight = null; // Collapse the previously open description
+        const currentHeading = currentOpenDescription.previousElementSibling.querySelector('h3');
+        currentHeading.classList.remove('rotated'); // Remove rotation from the previous heading
+    }
+
+    // Toggle the clicked description (expand or collapse)
+    if (description.style.maxHeight) {
+        description.style.maxHeight = null; // Collapse it if it's already open
+    } else {
+        description.style.maxHeight = description.scrollHeight + "px"; // Expand the description
+    }
+
+    // Toggle the rotation of the heading
+    heading.classList.toggle('rotated');
+
+    // Update currentOpenDescription to the new expanded description
+    currentOpenDescription = description.style.maxHeight ? description : null;
+}
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Toggle Example</title>
+    <link rel="stylesheet" href="/task2/sub-pages/sub-css/verticaltab2.css" />
+    <style>
+      .agn-top .agn-div1.active {
+        background-color: #007bff; /* Active button color */
+        color: white;
+      }
+      .day .agc-container {
+        display: none; /* Hide all content initially */
+      }
+      .day .agc-container.active {
+        display: block; /* Show active content */
+      }
+      .agn-btn.active {
+        background-color: #007bff; /* Button active color */
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="agn-top">
+      <div class="agn-div1" id="day1">
+        <h2><span>Day 1 </span>07 October 2024</h2>
+      </div>
+      <div class="agn-div1" id="day2">
+        <h2><span>Day 2 </span>08 October 2024</h2>
+      </div>
+    </div>
+
+    <div class="day day-1">
+      <div class="agn-mid">
+        <button class="agn-btn" id="conference">CONFERENCE HALL</button>
+        <button class="agn-btn" id="traders">TRADERS HALL</button>
+      </div>
+      <div class="agc-container cp-1 active"> <!-- active class on Day 1 -->
+        <div class="ag-card">
+          <p style="font-weight: 800">9:00 AM - 10:00 AM</p>
+          <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1 hour )</p>
+          <div></div>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>October 07, Monday</p>
+        </div>
+      </div>
+      <div class="agc-container cp-2">
+        <div class="ag-card">
+          <p style="font-weight: 800">9:30 AM - 11:00 AM</p>
+          <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1.30 hour )</p>
+          <div></div>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>October 08, Tuesday</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="day day-2">
+      <div class="agn-mid">
+        <button class="agn-btn" id="conference">CONFERENCE HALL</button>
+        <button class="agn-btn" id="traders">TRADERS HALL</button>
+      </div>
+      <div class="agc-container cp-1">
+        <div class="ag-card">
+          <p style="font-weight: 800">9:00 AM - 10:00 AM</p>
+          <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1 hour )</p>
+          <div></div>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>October 07, Monday</p>
+        </div>
+      </div>
+      <div class="agc-container cp-2 active"> <!-- active class on Day 2 -->
+        <div class="ag-card">
+          <p style="font-weight: 800">9:30 AM - 11:00 AM</p>
+          <p>( <i class="fa-solid fa-clock-rotate-left"></i> 1.30 hour )</p>
+          <div></div>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>October 08, Tuesday</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Buttons to toggle between Day 1 and Day 2
+        const day1Button = document.getElementById("day1");
+        const day2Button = document.getElementById("day2");
+
+        // Sections for Day 1 and Day 2
+        const day1Content = document.querySelector(".day-1");
+        const day2Content = document.querySelector(".day-2");
+
+        // Function to activate Day 1 content
+        function showDay1() {
+          day1Button.classList.add("active");
+          day2Button.classList.remove("active");
+          day1Content.classList.add("active");
+          day2Content.classList.remove("active");
+        }
+
+        // Function to activate Day 2 content
+        function showDay2() {
+          day2Button.classList.add("active");
+          day1Button.classList.remove("active");
+          day2Content.classList.add("active");
+          day1Content.classList.remove("active");
+        }
+
+        // Add event listeners for Day 1 and Day 2 buttons
+        day1Button.addEventListener("click", showDay1);
+        day2Button.addEventListener("click", showDay2);
+
+        // Set the default active state to Day 1
+        showDay1();
+
+        // Conference vs Traders toggle
+        const conferenceButton = document.getElementById("conference");
+        const tradersButton = document.getElementById("traders");
+        const cp1Elements = document.querySelectorAll(".cp-1");
+        const cp2Elements = document.querySelectorAll(".cp-2");
+
+        // Function to show Conference content
+        function showConference() {
+          cp1Elements.forEach((element) => element.classList.add("active"));
+          cp2Elements.forEach((element) => element.classList.remove("active"));
+          conferenceButton.classList.add("active");
+          tradersButton.classList.remove("active");
+        }
+
+        // Function to show Traders content
+        function showTraders() {
+          cp1Elements.forEach((element) => element.classList.remove("active"));
+          cp2Elements.forEach((element) => element.classList.add("active"));
+          conferenceButton.classList.remove("active");
+          tradersButton.classList.add("active");
+        }
+
+        // Add event listeners for Conference and Traders buttons
+        conferenceButton.addEventListener("click", showConference);
+        tradersButton.addEventListener("click", showTraders);
+
+        // Set the default active state to Conference
+        showConference();
+      });
+    </script>
+  </body>
+</html>

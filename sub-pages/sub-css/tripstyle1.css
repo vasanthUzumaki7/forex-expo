@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.tr1-container{
+    background: url(https://theforexexpo.com/wp-content/uploads/2024/07/Emirates-banner.jpg);
+    padding: 150px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.tr1-cc{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.tr1-container h1{
+    font-size: var(--xxxl);
+    color: white;
+    font-weight: 100;
+    margin: 10px 0px;
+    font-family: "Avenir" !important;
+}
+.tr1-container h3{
+    color: white;
+    font-size: var(--big);
+    font-weight:300 ;
+    margin: 10px 0px;
+    width: max-content;
+    font-family: "Avenir" !important;
+}
+
+.tr1{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tr1 span{
+    font-weight:200;
+}
+.tr1 div:nth-child(3) .tr1-h3{
+    background-color:var(--red) ;
+    padding: 5px;
+}
+
+.tr2-container h1{
+    font-size: var(--xl);
+    color: var(--grey);
+    margin-bottom: 20px;
+    font-family: "Avenir" !important;
+}
+.tr2-container p{
+    font-size: var(--extrasmall);
+    color: var(--ogrey);
+    text-align: justify;
+    line-height: 25px;
+    font-family: "Avenir" !important;
+}
+.tr2-container{
+    padding: 70px 50px;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.tr3-para{
+    background-color: rgb(225, 224, 255);
+    padding: 50px 30px;
+}
+.tr3-para p{
+    color: rgb(86, 89, 104);
+     line-height: 25px;
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+     font-size: 18px !important;
+}
+@media screen and (max-width:552px) {
+    .tr1-container h3{
+        width: auto;
+    }
+    .tr1{
+        gap: 5px;
+    }
+    .tr1-container h1{
+        font-size: var(--medium);
+        color: white;
+        font-weight: 100;
+        margin: 5px 0px;
+    }
+    .tr1-container h3{
+        font-size: var(--small);
+        margin: 5px 0px;
+    }
+    .tr1-container{
+        height: auto;
+        padding: 80px 0px;
+    }
+
+    .tr2-container h1{
+        font-size: var(--medium);
+        color: var(--grey);
+        margin-bottom: 20px;
+    }
+    .tr2-container p{
+        font-size: var(--extrasmall);
+        color: var(--ogrey);
+        text-align: justify;
+        line-height: 25px;
+    }
+    .tr2-container{
+        padding: 20px;
+    }
+}

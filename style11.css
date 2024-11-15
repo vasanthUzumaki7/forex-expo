@@ -1,0 +1,262 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+} */
+
+/* *{
+    font-family: "big john";  
+    font-family: "Avenir Heavy"; 
+} */
+
+
+/* common btn */
+ .mybtn-1{
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 160px;
+    min-width: initial;
+    height: 45px;
+    background: transparent;
+    line-height: 44px;
+    font-size: 15px;
+    font-family: 'Avenir';
+    margin-right: 5px;
+    margin-top: 10px;
+}
+ .mybtn-1:hover{
+    background-color: white ;
+    color: rgb(230, 0, 50) ;
+    border: none;
+}
+.mybtn-2{
+    background-color: rgb(230, 0, 50) ;
+    color:white ;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    min-width: initial;
+    height: 45px;
+    line-height: 44px;
+    font-size: 15px;
+    font-family: 'Avenir';
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.mybtn-2:hover{
+    background-color:white ;
+    color: rgb(230, 0, 50) ;
+}
+/* end */
+h1,h2,h3,h4{
+    font-family:"big john" !important;
+}
+p{
+    font-family:"Avenir"!important ; 
+}
+.eleven .map-container{
+   width: 50%;
+    height: 400px;
+}
+.eleven{
+    width: 100%;
+    max-width: 1200px;
+    margin:100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eleven-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( to right, rgba(48, 48, 151,0.3),rgba(168, 32, 54,0.3)),url(https://theforexexpo.com/wp-content/uploads/2024/04/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 20px;
+    
+}
+.map-container iframe{
+    width: 100%;
+    height: 100%;
+}
+.eleven .map-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+.map-right h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.map-right p{
+    color: white;
+    font-size: 20px;
+}
+.map-right p span{
+    font-weight: bolder;
+}
+.map-right button{
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(194, 52, 52);
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.twelve-card{
+    background-image: url(https://theforexexpo.com/wp-content/uploads/2024/09/Team-Index-Bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    margin: 20px 20px;
+    font-weight: normal;
+}
+.twelve-card a{
+    text-decoration: none;
+    position: relative;
+    font-weight: normal;
+    font-size: 12px;
+    color: black;
+}
+.twelve-card a::before{
+    content: "";
+    background-color: black;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s;
+}
+.twelve-card a:hover:before{
+    width: 100%;
+    transition: 0.3s;
+}
+.twelve-card .profile-icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.twelve-card p:nth-child(2){
+    text-align: center;
+}
+.twelve-card p:nth-child(2) img{
+    height: 30px;
+    width: 30px;
+}
+.twelve-card p:nth-child(3){
+    color: black;
+    font-weight: bold;
+}
+.twelve-card p:nth-child(4){
+    color: grey;
+}
+
+.twelve h1{
+    color: rgb(16, 15, 105);
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.twelve p:nth-child(2){
+    color: rgb(22, 20, 20);
+    font-size: 15px;
+    text-align: center;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+.twelve-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.twelve{
+    padding: 100px 0px;
+}
+@media screen and (max-width:992px) {
+
+    .eleven .map-container{
+        width: 300px;
+         height: 300px;
+     }
+     .eleven .map-right{
+         width: 300px;
+         display: flex;
+         flex-direction: column;
+         justify-content:center;
+         align-items:start;
+         box-sizing: border-box;
+         padding-left: 40px;
+     }
+    
+     /*  */
+     .Event-banner h1 {
+        font-size: 25px;
+     }
+     
+}
+@media screen and (max-width:552px){
+    .eleven{
+        flex-direction: column;
+    }
+    .eleven .map-container{
+        width: 100%;
+         height: 350px;
+     }
+     .eleven .map-right{
+        width: 100%;
+     }
+     .map-right h1 {
+        color: white;
+        font-size: 25px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .eleven {
+        padding: 10px 5px;
+    }
+    .eleven .map-right {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .map-right p{
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .twelve-card {
+        width: 240px;
+        height: 280px;
+        gap: 15px;
+        margin: 10px 10px;
+    }
+    .twelve h1{
+        font-size: 30px;
+    }
+  
+}

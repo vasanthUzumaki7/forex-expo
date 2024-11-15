@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../style9.css">
+    <link rel="stylesheet" href="./sub-css/event.css">
+    <link rel="stylesheet" href="../style12.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../myslick.css">
+    <link rel="stylesheet" href="../absolute.css">
+    <link rel="stylesheet" href="../style11.css">
+
+    <link href="https://fonts.cdnfonts.com/css/big-john" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+
+    <style>
+        .Event-banner img {
+
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .Event-banner {
+            width: 100%;
+            height: 100%;
+            height: 50vh;
+            position: relative;
+        }
+
+        .Event-banner .e-banner {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .Event-banner .e-b-layer {
+            z-index: 3;
+            object-fit: cover;
+            height: 100%;
+        }
+
+
+
+        .Event-banner h1 {
+            color: white;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            font-weight: bold;
+            z-index: 4;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .animl {
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .animr {
+            transform: translateX(30px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .anime {
+            transform: translateX(0);
+            opacity: 1;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="absolute-container" style="z-index: 5;">
+        <div class="app-icon" style="z-index: 5;">
+            <div>
+                <img src="https://theforexexpo.com/wp-content/uploads/2024/09/Buy-Tickets.png" alt="">
+                Register Now
+            </div>
+
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Whatsapp.png" alt="">
+            <img src="https://theforexexpo.com/wp-content/uploads/2024/09/SideBar-Telegram.png" alt="">
+
+            <a href="javascript:void(0)" onclick="scrollToTop()" class="scroll1" id="scroll"><button><i
+                        class="fa-solid fa-arrow-up"></i></button></a>
+        </div>
+        <div class="absolute-buttons" style="z-index: 5;">
+            <h1>Event Completed</h1>
+            <div>
+                <button>Become Sponcer</button>
+                <button style="background-color: rgb(230, 0, 50);color: white;">Ready to visit</button>
+                <button>Event App</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-clock">
+        <p><span style="color: brown;">Address :</span> Hall 1, 2, 3, Dubai World Trade Centre, UAE</p>
+        <p><span style="color: brown;">Date & Time :</span> 7 - 8 October 10:00AM - 6:00PM</p>
+        <ul>
+            <li><span class="fab fa-facebook-f"></span></li>
+            <li><span class="fab fa-instagram"></span></li>
+            <li><span class="fa-brands fa-x-twitter"></span></li>
+            <li><span class="fab fa-linkedin"></span></li>
+        </ul>
+    </div>
+
+    <header class="heading" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+            </div>
+            <nav id="navigation" class="navigation">
+
+                <div class="mobile-view">
+                    <a href=""><img src="https://theforexexpo.com/wp-content/uploads/2024/07/white-logo.svg" alt=""></a>
+                </div>
+
+                <ul class="unlist" id="unlist">
+                    <li> <a href="../index.html">Home</a></li>
+                    <li class="menu1"> <a href="#">Visit</a>
+                        <ul class="list1">
+                            <li><a href="./Register.html">Register Now</a></li>
+                            <li><a href="./Event.html">Event App</a></li>
+                            <li><a href="./media.html">Media Partners</a></li>
+                            <li><a href="./trip.html">Plan Your Trip</a></li>
+                            <li><a href="./venue.html">Venue</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Exibit</a>
+                        <ul class="list2">
+                            <li><a href="./sponcers24.html">Sponsers 2024</a></li>
+                            <li><a href="./stand.html">Book Your Stand</a></li>
+                            <li><a href="./opportunity.html">Branding Opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu2"> <a href="#">Agenda</a>
+                        <ul class="list2">
+                            <li><a href="./myagenda.html">Agenda</a></li>
+                            <li><a href="./speaker.html">Speaker 2024</a></li>
+                            <li><a href="./becomespeaker.html">Become Speaker</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="./sponcers24.html">Sponcer</a></li>
+                    <li> <a href="#">Floorplan</a></li>
+                    <li> <button class="btn-1">Become Sponcer</button></li>
+                    <li> <button class="btn-2">Register to Visit</button></li>
+
+                </ul>
+            </nav>
+            <div class="ovrl"></div>
+            <div class="toggle" id="toggle">
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <div class="m-d"></div>
+                <div class="m-d" style="width: 25px;"></div>
+                <!-- <div class="togL"></div>
+                <div class="togR"></div> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="Event-banner">
+        <img class="e-b-layer" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/bg-2.png" alt="">
+        <img class="e-banner" src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/05/04-2-1440x394.jpg"
+            alt="">
+        <h1>EVENT APP</h1>
+    </div>
+
+    <div class=" nine" style="background: white;">
+        <div class="nineth-container">
+            <div class="nineth-content-container animl">
+                <h1 style="color: rgb(68, 61, 61);font-weight: bolder;font-size: 44px;">Elevate your Networking with our
+                    Event App</h1>
+                <p style="color: black;font-weight: 300;">Download now to transform your event experience!</p>
+                <div>
+                    <div class="playstore-buttons">
+                        <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/09/Apple-app.png"
+                                class="download-btn" alt=""></a>
+                        <a href="#"><img src="https://theforexexpo.com/wp-content/uploads/2024/09/Google-play.png"
+                                class="download-btn" alt=""></a>
+                    </div>
+                    <p class="btn-" style="color: black;">Or</p>
+                    <a href="#"><img style="margin-bottom: 0;"
+                            src="https://theforexexpo.com/wp-content/uploads/2024/09/Web-app.png" class="download-btn"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="nineth-img-container animr">
+                <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/Mobile-App.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="Event-cc">
+        <div class="Event-card-container">
+            <div class="ev-left animl">
+                <h1>All-In-One Event Companion</h1>
+                <p>Unlock new opportunities to connect, collaborate, and innovate with investors, innovators, and
+                    visionaries</p>
+            </div>
+
+            <div class="ev-right animr">
+                <div class="ev-card">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/08/Event-Exp-1.png" alt="">
+                    <p>Register now for Exclusive App Access</p>
+                </div>
+                <div class="ev-card">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/08/Event-Exp-2.png" alt="">
+                    <p>Create your Standout Profile</p>
+                </div>
+                <div class="ev-card">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/08/Event-Exp-3.png" alt="">
+                    <p>Seamlessly Exchange Messages and Schedule Meetings</p>
+                </div>
+                <div class="ev-card">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/08/Event-Exp-4.png" alt="">
+                    <p>Stay Updated with the Event Agenda</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirteen">
+        <div class="th-top">
+            <div class="thirteen-container">
+                <div class="th-top-left">
+                    <img src="https://theforexexpo.com/dubai2024/wp-content/uploads/2024/04/Footer-Site-Logo.png"
+                        alt="">
+                    <p style="font-weight: bold;">Address</p>
+                    <h3>HUAN QIAO EVENT MANAGEMENT L.L.C</h3>
+                    <p>901, City Tower 2, Sheikh Zayed Road, Dubai, United Arab Emirates.
+                    </p>
+                </div>
+                <div class="th-top-right">
+                    <h2>ORGANIZED BY</h2>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                    <p>Huan Qiao Event Management is where we bring you a seamless experience and a one-stop solution
+                        for
+                        all segments in Crypto and Forex Expo. Our dedicated team ensures the presence of industry
+                        pioneers
+                        with cutting-edge knowledge in the relevant markets.</p>
+                </div>
+            </div>
+        </div>
+        <div class="th-bottom">
+            <div class="thb-container">
+                <div class="th-footer">
+                    <h4>© 2024 Forex Expo. All rights reserved</h4>
+                    <ul>
+                        <li>
+                            <p>Terms and Conditions</p>
+                        </li>
+                        <li>
+                            <p>Privacy Policy</p>
+                        </li>
+                    </ul>
+                </div>
+                <p>Disclaimer: Forex Expo Dubai 2024 is an educational event designed to provide information on
+                    financial
+                    products and services. The views and opinions expressed by speakers, sponsors, exhibitors, and
+                    attendees
+                    are their own and do not necessarily reflect the views and opinions of the Forex Expo Dubai 2024
+                    organizers. The information provided at this event is for educational purposes only and should not
+                    be
+                    considered financial, legal, or investment advice. Attendees should always consult with a financial
+                    advisor before making any financial decisions. The organizers of Forex Expo Dubai 2024 will not be
+                    held
+                    responsible for any financial loss or damage that may result from the use of information provided at
+                    this event.</p>
+            </div>
+        </div>
+    </div>
+
+<script src="./myscript.js"></script>
+
+
+</body>
+
+</html>

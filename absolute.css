@@ -1,0 +1,216 @@
+/* common btn */
+.mybtn-1{
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 160px;
+    min-width: initial;
+    height: 45px;
+    background: transparent;
+    line-height: 44px;
+    font-size: 15px;
+    font-family: 'Avenir';
+    margin-right: 5px;
+    margin-top: 10px;
+}
+ .mybtn-1:hover{
+    background-color: white ;
+    color: rgb(230, 0, 50) ;
+    border: none;
+}
+.mybtn-2{
+    background-color: rgb(230, 0, 50) ;
+    color:white ;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    min-width: initial;
+    height: 45px;
+    line-height: 44px;
+    font-size: 15px;
+    font-family: 'Avenir';
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.mybtn-2:hover{
+    background-color:white ;
+    color: rgb(230, 0, 50) ;
+    border: 1px solid rgb(230, 0, 50);
+}
+.mybtn-2:hover i{
+    color: rgb(230, 0, 50);
+}
+
+
+
+ .app-icon div {
+    color: white;
+   width: 55px;
+   height: 100px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-radius: 50px;
+   font-size: 13px;
+   background-color: rgb(230, 0, 50);
+}
+ .app-icon div img{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+}
+ .absolute-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 50px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.absolute-buttons button{
+ height: 40px;
+    width: 160px;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-left: 20px;
+    outline: none;
+    margin-bottom: 3px;
+}
+.absolute-buttons .abs-btn1{
+    background-color: white;
+    color:rgb(230, 0, 50);
+}
+.absolute-buttons .abs-btn1:hover{
+    background-color: rgb(230, 0, 50);
+    color:white;
+}
+.absolute-buttons .abs-btn2{
+    background-color: rgb(230, 0, 50);
+    color:white;
+}
+.absolute-buttons .abs-btn2:hover{
+    background-color: white;
+    color:rgb(230, 0, 50);
+}
+.absolute-buttons h1{
+    font-size: 32px;
+    color: white;
+    font-family: "Avenir" !important;
+    font-weight: normal;
+}
+.app-icon button{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(20, 29, 79);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+}
+.app-icon button:hover{
+    background-color: rgb(230, 0, 50);
+    cursor: pointer;
+}
+
+.app-icon button i{
+    font-size: 20px;
+    color: white;
+}
+.app-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    gap: 10px;
+    position: fixed;
+    right: 15px;
+    top: 30%;
+    z-index: 3;
+}
+ .abs-logo{
+    position: fixed;
+    left: 0px;
+    top: 200px;
+    z-index: 3;
+}
+.app-icon .scroll1{
+    display: none;
+}
+.app-icon .scroll2{
+    display: block;
+}
+.menu1>a:nth-child(1)::after,.menu2>a:nth-child(1)::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-left: 5px;
+}
+.menu1 ul li a::before,.menu2 ul li a::before{
+    content: "";
+    display: none !important;
+}
+
+@media screen and (max-width:1440px){
+.app-icon img{
+    width: 40px;
+    height: 40px;
+}
+.app-icon div {
+    width: 50px;
+    font-size: 10px;
+}
+.absolute-buttons button{
+    width: 140px;
+}
+}
+
+@media screen and (max-width:992px) {
+    .absolute-buttons div{
+        display: none;
+    }
+    .absolute-buttons{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width:700px) {
+ .app-icon div{
+        display: none;
+    }
+    .app-icon img{
+        display: none;
+    } .abs-logo{
+        display: none;
+    }
+}
+@media screen and (max-width:500px){
+    .absolute-buttons h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .absolute-buttons{
+        padding: 10px 10px;
+    }
+    
+}

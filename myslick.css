@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mysticker {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px; /* Adds depth to the 3D 
+    effect */
+    margin: 20px auto;
+}
+.sticker-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* Ensures the 3D effect works correctly */
+    transform-origin: center;
+    transition: transform 0.6s ease-in-out; /* Smooth flipping animation */
+}
+
+.mysticker:hover .sticker-inner {
+    transform: rotateY(180deg); /* Rotates 180 degrees on hover */
+}
+
+.st-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ensures only the front face is visible at a time */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+.st-face img{
+    width: 100%;
+    border-radius: 10px;
+}
+.st-back {
+    transform: rotateY(180deg); /* Back rotated by 180 degrees */
+    background-color: rgb(26, 26, 133);
+    color: white;
+    font-size: 15px;
+}
+
+.st-back button {
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(218, 54, 54);
+    color: white;
+    border:rgb(218, 54, 54);
+    border-radius: 5px;
+}
+
+.st-back button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(230, 36, 36,1.0);
+}
+
+.my-corousel{
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 50px;
+}
+
+.Section-title h1{
+    font-size: 47px;
+    color: rgb(18, 18, 56);
+}
+.Section-title{
+    margin-bottom: 20px;
+}
+.cor-btn button{
+    width: 160px;
+    height: 40px;
+    color: white;
+    background-color: rgb(230, 0, 50);
+    border-radius: 10px;
+    margin: auto;
+    border: none;
+}
+.cor-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* slick changes */
+.slick-dots li{
+    width: 20px !important;
+}
+.slick-dots li button{
+    width: 20px !important;
+}
+.slick-dots li button:before{
+    width: 20px !important;
+}
+
+.card-slide .slick-prev,.card-slide .slick-next{
+   width: 40px;
+   height: 30px;
+   display: block;
+}
+ .card-slide .slick-next::before {
+    content: "";
+    background-image: url(https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.card-slide .slick-prev::before{
+    content: "";
+    background-image: url(https://theforexexpo.com/wp-content/themes/Crypto%20Expo/images/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+.slick-slider .slick-list{
+    margin: 0px 20px;
+}
+
+/* slicks dots must */
+.Section-title{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Partner-dots .slick-dots,
+.Partner-Btmdots .slick-dots{
+    position: relative;
+    bottom: auto;
+}
+.Partner-Btmdots{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .Partner-dots{
+        display: none;
+    }
+    .Partner-Btmdots{
+        display: block;
+    }
+    .card-slide .slick-prev,.card-slide .slick-next{
+        display: none;
+    }
+    .Section-title h1{
+        font-size: 35px;
+    }
+}
+    @media screen and (max-width:552px) {
+      
+        .mysticker {
+        height: 120px;
+        width: 120px;
+    }
+    }
+
+    

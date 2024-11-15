@@ -1,0 +1,150 @@
+*{
+    font-family: "Avenir";
+}
+
+.bcs-container{
+    margin: 50px auto;
+    max-width: 1200px;
+    width: 100%;
+    
+}
+.bcs-top-txt p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.bcs-top-txt h1{
+    font-size: 35px;
+    color: var(--dblue);
+    font-weight: 800;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "big john";
+    margin-bottom: 15px;
+}
+
+.bcs-content{
+    display: flex;
+    justify-content: center;
+
+}
+.bcs-content p{
+    padding: 30px 30px;
+}
+.bcs-top-txt{
+    margin: 0px 30px;
+    box-sizing: border-box;
+    
+}
+
+/*form*/
+.bcs-form-container .form-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} .bcs-form label{
+    margin: 10px 0px 5px 0px;
+}
+.bcs-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.bcs-form form{
+    box-shadow: 0 0 10px red;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 30px 0px;
+}
+.bcs-form{
+    padding: 100px  0px;
+    background: url(https://theforexexpo.com/dubai2024/wp-content/uploads/2024/07/BecSpeakerForm-Bg.png);
+}
+.bcs-form button{
+    border: none;
+    background-color: var(--red);
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.bcs-form-container .form-1 input{
+    padding:10px 10px ;
+    min-width: 250px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.bcs-form form label{
+    color: white;
+}
+
+.bcs-txt-area{
+    display: flex;
+    flex-direction: column;
+}
+.bcs-txt-area textarea{
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.bcs-form h1{
+    font-size: var(--medium);
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "big john";
+}
+@media screen and (max-width:772px) {
+    .bcs-content{
+        flex-wrap: wrap;
+    }
+    .bcs-img img{
+        height: 100%;
+        width: 100%;
+        }
+       
+        .bcs-container p{
+            font-size: var(--extrasmall);
+        }
+        .bcs-form-container{
+            flex-direction: column;
+            width: 100%;
+        }
+        .bcs-form-container .form-1 input{
+            padding:10px 10px ;
+            min-width: 100%;
+            width: 100%;
+        }
+        .bcs-form-container .form-1{
+            width: 100%;
+        }
+        .bcs-form form{
+            padding: 30px 40px;
+        }
+        .bcs-form{
+            padding: 30px;
+        }
+        .bcs-form h1{
+            font-size: var(--big);
+        }
+}
+@media screen and (max-width:552px){
+    .bcs-top-txt h1{
+        font-size: var(--small);
+    }
+    .bcs-form form{
+        padding: 20px 10px;
+    }
+} 

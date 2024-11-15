@@ -1,0 +1,300 @@
+*{
+    font-family: "Avenir";
+}
+.agn-top .agn-div1 {
+    width: 270px;
+    padding: 10px 10px;
+    height: 100px;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 0 15px black;
+    text-align: center;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer; /* Make it clickable */
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Avenir";
+  }
+  .agn-top {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .agenda{
+    padding: 3.0rem 0rem;
+  }
+  .day{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .agn-top div:nth-child(3){
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .agn-div1 span{
+    font-size: 25px;
+  }
+  .agn-div1 h2{
+    font-size: 20px;
+  }
+  .agn-top .agn-div1.active {
+    transition: 0.2s;
+    width: 300px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgb(21, 30, 82), rgb(171, 9, 49));
+    box-shadow: 0 0 15px black;
+    text-align: center;
+    color: white;
+  }
+  .agn-top .agn-div1:hover{
+    background: linear-gradient(to right, rgb(21, 30, 82), rgb(171, 9, 49)); 
+    color: white;
+  }
+/* agn btn 1 and 2 */
+  .agn-mid .agn-btn {
+    font-size: var(--extrasmall);
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid rgb(20, 29, 79);
+    background-color: white;
+    color:rgb(20, 29, 79);
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+  }
+  .agn-btn.active{
+    background-color: rgb(20, 29, 79);
+    color: white;
+  }
+  .agn-mid .agn-btn:hover{
+    background-color: rgb(20, 29, 79);
+    color: white;
+  }
+ 
+  .agn-mid .agn-btn2 {
+    font-size: var(--extrasmall);
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid rgb(20, 29, 79);
+    background-color: white;
+    color:rgb(20, 29, 79);
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+  }
+  .agn-btn2.active{
+    background-color: rgb(20, 29, 79);
+    color: white;
+  }
+  .agn-mid .agn-btn2:hover{
+    background-color: rgb(20, 29, 79);
+    color: white;
+  }
+
+  /* end */
+
+  .agn-mid {
+    display: flex;
+    padding: 15px 50px;
+    flex-wrap: wrap;
+  }
+
+  .agc-container {
+    display: none; /* Hide elements initially */
+    padding: 0px 50px;  
+}
+  
+  .agc-container.active {
+    display: block; /* Show elements with the 'active' class */
+  }
+.day{
+    display: none;
+}
+.day.active{
+    display: block;
+}
+
+.agn-top button i{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.ag-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+.ag-card div{
+    height: 3px;
+    background-color: #ccc;
+    width: 100px;
+    flex: 1;
+}
+.ag-card p{
+    color: var(--dblue);
+}
+.ag-card p:nth-child(5){
+    background-color: var(--dblue);
+    padding: 5px;
+    color: white;
+}
+
+.agen-don{
+    width: 100%;
+    padding: 20px;
+    color: rgb(33, 37, 41);
+    background-color: rgb(240, 251, 252);
+    border-bottom: 1px solid white;
+}
+.agen-head h3{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.agen-head{
+    padding: 10px 0px 20px 0px;
+}
+.to-desc{
+    overflow: hidden;
+    max-height: 10px;
+    transition: max-height 0.3s ;
+    box-sizing: border-box;
+    position: relative;
+}
+.agen-head p:nth-child(2){
+    background-color: var(--dblue);
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(20, 29, 79);
+}
+.to-desc::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(211, 19, 127, 0) 0%, rgb(240 251 252) 100%);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.to-desc.white::after{
+    background: none;
+}
+
+.agen-speak .agen-sp-crd div:nth-child(1) {
+    max-height: 70px;
+    max-width: 70px;
+    height: 100%;
+    width: 100%;
+}
+.agen-speak .agen-sp-crd h3{
+    font-size: var(--small);
+    color: black;
+}
+.agen-speak .agen-sp-crd p{
+    font-size: var(--extrasmall);
+    color: black;
+}
+.agen-speak div div img{
+    height: 100%;
+    width: 100%;
+    object-fit: center;
+}
+.agen-speak .agen-sp-crd{
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgb(227, 231, 255);
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.agen-list .agen-li{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: none;
+    margin-top: 0;
+}
+.agen-list .ag-p{
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+}
+.agen-speak{
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+
+/* .... */
+@media screen and (max-width:992px) {
+    .agn-top div:nth-child(3){
+        min-width: 280px;
+        justify-content: center;
+    }
+    .agn-top{
+        justify-content: center;
+    }
+    .agn-mid{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768px){
+
+    .agn-div1 h2{
+        font-size: 15px;
+    }
+    .ag-card span{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:552px){
+    .agen-speak .agen-sp-crd h3{
+        font-size: var(--extrasmall);
+        color: black;
+    }
+    .agen-speak .agen-sp-crd p{
+        font-size: 10px;
+        color: black;
+    }
+    .agen-head h3{
+        font-size: var(--extrasmall);
+    }
+    .to-desc{
+        font-size: var(--extrasmall);
+    }
+    .agc-container{
+        padding: 20px;
+    }
+    .agn-top{
+        padding: 0px 20px;
+    }
+    .agn-mid{
+        padding: 15px 20px;
+    }
+}
+
